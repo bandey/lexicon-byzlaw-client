@@ -1,0 +1,16 @@
+{
+  "name": "lexicon-byzlaw-client",
+  "version": "0.1.0",
+  "description": "Lexicon Byzantine Law and Acts - client part",
+  "private": true,
+  "author": "Dmitrii Kondratev <origbandey@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Skip: no test specified\" && exit 0",
+    "dev": "cross-env NODE_ENV=production node ./bin/thesaurus-byzlaw"
+  },
+  "devDependencies": {
+    "webpack": "^4.36.1",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
