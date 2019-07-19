@@ -1,2 +1,1 @@
-# lexicon-byzlaw-client
-Lexicon Byzantine Law and Acts - client part (frontend)
+Lexicon "Byzantine Law and Acts" - client part (frontend)
