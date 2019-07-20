@@ -1,1 +1,1 @@
-export { default } from './lexicon-view.js';
+export { default } from './lexicon-data.js';

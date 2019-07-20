@@ -1,8 +1,14 @@
 import React from 'react';
 
-function Lexicon() {
+function Lexicon({data}) {
   return (
-    <span>Lexicon</span>
+    <ul>
+      {
+        data.map(({w, c}) => (
+          <li key={w}>{w} - {c}</li>
+        ))
+      }
+    </ul>
   );
 };
 
