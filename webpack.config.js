@@ -27,7 +27,11 @@ module.exports = {
     ], { copyUnmodified: false }),
   ],
   devServer: {
+    port: 8008,
     contentBase: path.join(__dirname, 'dist'),
+    proxy: {
+      '/graphql/*': 'http://localhost:8080'
+    },
     hot: false
   }
 };
