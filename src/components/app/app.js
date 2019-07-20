@@ -1,8 +1,10 @@
 import React from 'react';
 
+import Lexicon from '../lexicon/lexicon.js';
+
 function App() {
   return (
-    <span>hello</span>
+    <Lexicon />
   );
 };
 
