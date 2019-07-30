@@ -24,6 +24,7 @@ module.exports = {
   plugins: [
     new CopyWebpackPlugin([
       { from: './src/index.html', to: './' },
+      { from: './node_modules/bootstrap/dist/css/bootstrap.min.css', to: './styles/' },
     ], { copyUnmodified: false }),
   ],
   devServer: {
