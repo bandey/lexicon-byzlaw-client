@@ -19,134 +19,173 @@ exports[`renders correct content 1`] = `
     ]
   }
 >
-  <List
-    direction="ltr"
-    height={400}
-    itemCount={3}
-    itemSize={40}
-    layout="vertical"
-    overscanCount={2}
-    useIsScrolling={false}
-    width="100%"
+  <Card
+    body={false}
+    border="primary"
+    style={
+      Object {
+        "borderBottomRightRadius": "0",
+        "marginBottom": "1rem",
+      }
+    }
   >
     <div
-      onScroll={[Function]}
+      className="card border-primary"
       style={
         Object {
-          "WebkitOverflowScrolling": "touch",
-          "direction": "ltr",
-          "height": 400,
-          "overflow": "auto",
-          "position": "relative",
-          "width": "100%",
-          "willChange": "transform",
+          "borderBottomRightRadius": "0",
+          "marginBottom": "1rem",
         }
       }
     >
-      <div
-        style={
-          Object {
-            "height": 120,
-            "pointerEvents": undefined,
-            "width": "100%",
-          }
-        }
+      <CardHeader
+        className="bg-primary text-white"
       >
-        <renderRow
-          index={0}
-          key="0"
+        <div
+          className="bg-primary text-white card-header"
+        >
+          Header
+        </div>
+      </CardHeader>
+      <List
+        direction="ltr"
+        height={400}
+        itemCount={3}
+        itemSize={40}
+        layout="vertical"
+        overscanCount={2}
+        useIsScrolling={false}
+        width="100%"
+      >
+        <div
+          onScroll={[Function]}
           style={
             Object {
-              "height": 40,
-              "left": 0,
-              "position": "absolute",
-              "top": 0,
+              "WebkitOverflowScrolling": "touch",
+              "direction": "ltr",
+              "height": 400,
+              "overflow": "auto",
+              "position": "relative",
               "width": "100%",
+              "willChange": "transform",
             }
           }
         >
           <div
             style={
               Object {
-                "height": 40,
-                "left": 0,
-                "position": "absolute",
-                "top": 0,
+                "height": 120,
+                "pointerEvents": undefined,
                 "width": "100%",
               }
             }
           >
-            <span>
-              one
-               - 
-              1
-            </span>
-          </div>
-        </renderRow>
-        <renderRow
-          index={1}
-          key="1"
-          style={
-            Object {
-              "height": 40,
-              "left": 0,
-              "position": "absolute",
-              "top": 40,
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "height": 40,
-                "left": 0,
-                "position": "absolute",
-                "top": 40,
-                "width": "100%",
+            <renderRow
+              index={0}
+              key="0"
+              style={
+                Object {
+                  "height": 40,
+                  "left": 0,
+                  "position": "absolute",
+                  "top": 0,
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <span>
-              two
-               - 
-              2
-            </span>
-          </div>
-        </renderRow>
-        <renderRow
-          index={2}
-          key="2"
-          style={
-            Object {
-              "height": 40,
-              "left": 0,
-              "position": "absolute",
-              "top": 80,
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "height": 40,
-                "left": 0,
-                "position": "absolute",
-                "top": 80,
-                "width": "100%",
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "height": 40,
+                    "left": 0,
+                    "paddingLeft": "1.25rem",
+                    "position": "absolute",
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
+              >
+                <span>
+                  one
+                   - 
+                  1
+                </span>
+              </div>
+            </renderRow>
+            <renderRow
+              index={1}
+              key="1"
+              style={
+                Object {
+                  "height": 40,
+                  "left": 0,
+                  "position": "absolute",
+                  "top": 40,
+                  "width": "100%",
+                }
               }
-            }
-          >
-            <span>
-              three
-               - 
-              3
-            </span>
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "height": 40,
+                    "left": 0,
+                    "paddingLeft": "1.25rem",
+                    "position": "absolute",
+                    "top": 40,
+                    "width": "100%",
+                  }
+                }
+              >
+                <span>
+                  two
+                   - 
+                  2
+                </span>
+              </div>
+            </renderRow>
+            <renderRow
+              index={2}
+              key="2"
+              style={
+                Object {
+                  "height": 40,
+                  "left": 0,
+                  "position": "absolute",
+                  "top": 80,
+                  "width": "100%",
+                }
+              }
+            >
+              <div
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "display": "flex",
+                    "height": 40,
+                    "left": 0,
+                    "paddingLeft": "1.25rem",
+                    "position": "absolute",
+                    "top": 80,
+                    "width": "100%",
+                  }
+                }
+              >
+                <span>
+                  three
+                   - 
+                  3
+                </span>
+              </div>
+            </renderRow>
           </div>
-        </renderRow>
-      </div>
+        </div>
+      </List>
     </div>
-  </List>
+  </Card>
 </Lexicon>
 `;
