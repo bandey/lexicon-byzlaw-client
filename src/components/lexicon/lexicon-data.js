@@ -18,7 +18,6 @@ export function renderContent({loading, error, data}, props) {
 
 export default function LexiconData(props) {
   const renderChildren = (paramsObj) => {
-    console.log(paramsObj);
     return renderContent(paramsObj, props);
   };
 
