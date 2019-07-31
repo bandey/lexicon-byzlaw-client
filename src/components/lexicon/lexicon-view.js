@@ -6,6 +6,12 @@ import { FixedSizeList as List } from 'react-window';
 function Lexicon({data}) {
   const rowHeight = 40;
 
+  const dataHeight = data.length * rowHeight;
+  let listHeight = Math.floor(document.documentElement.clientHeight * 0.7);
+  if (listHeight > dataHeight) {
+    listHeight = dataHeight;
+  }
+
   function renderRow({index, style}) {
     const row = data[index];
     if (!row) {
@@ -28,7 +34,7 @@ function Lexicon({data}) {
       <Card.Header className="bg-primary text-white">Header</Card.Header>
       <List
         width="100%"
-        height={rowHeight * 10}
+        height={listHeight}
         itemSize={rowHeight}
         itemCount={data.length}
       >

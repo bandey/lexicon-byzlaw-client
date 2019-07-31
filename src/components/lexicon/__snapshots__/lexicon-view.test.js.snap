@@ -49,7 +49,7 @@ exports[`renders correct content 1`] = `
       </CardHeader>
       <List
         direction="ltr"
-        height={400}
+        height={120}
         itemCount={3}
         itemSize={40}
         layout="vertical"
@@ -63,7 +63,7 @@ exports[`renders correct content 1`] = `
             Object {
               "WebkitOverflowScrolling": "touch",
               "direction": "ltr",
-              "height": 400,
+              "height": 120,
               "overflow": "auto",
               "position": "relative",
               "width": "100%",
