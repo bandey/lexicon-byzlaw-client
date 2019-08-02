@@ -1,7 +1,7 @@
 import React from 'react';
+import {FixedSizeList as List} from 'react-window';
 
-import Card from 'react-bootstrap/Card';
-import { FixedSizeList as List } from 'react-window';
+import {Panel, PanelHeader} from '../panel/panel.js';
 
 function Lexicon({data}) {
   const rowHeight = 40;
@@ -30,8 +30,8 @@ function Lexicon({data}) {
   };
 
   return (
-    <Card border="primary" style={{marginBottom: '1rem', borderBottomRightRadius: '0'}}>
-      <Card.Header className="bg-primary text-white">Header</Card.Header>
+    <Panel border="primary" squareCorner>
+      <PanelHeader bg="primary">Header</PanelHeader>
       <List
         width="100%"
         height={listHeight}
@@ -40,7 +40,7 @@ function Lexicon({data}) {
       >
         {renderRow}
       </List>
-    </Card>
+    </Panel>
   );
 };
 

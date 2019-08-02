@@ -19,173 +19,210 @@ exports[`renders correct content 1`] = `
     ]
   }
 >
-  <Card
-    body={false}
+  <Styled(CardWrapper)
     border="primary"
-    style={
-      Object {
-        "borderBottomRightRadius": "0",
-        "marginBottom": "1rem",
-      }
-    }
+    squareCorner={true}
   >
-    <div
-      className="card border-primary"
-      style={
+    <StyledComponent
+      border="primary"
+      forwardedComponent={
         Object {
-          "borderBottomRightRadius": "0",
-          "marginBottom": "1rem",
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "iTQBpa",
+            "rules": Array [
+              "
+  margin-bottom: 1rem;
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "Styled(CardWrapper)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
         }
       }
+      forwardedRef={null}
+      squareCorner={true}
     >
-      <CardHeader
-        className="bg-primary text-white"
+      <CardWrapper
+        border="primary"
+        className="sc-bdVaJa iTQBpa"
+        squareCorner={true}
       >
-        <div
-          className="bg-primary text-white card-header"
-        >
-          Header
-        </div>
-      </CardHeader>
-      <List
-        direction="ltr"
-        height={120}
-        itemCount={3}
-        itemSize={40}
-        layout="vertical"
-        overscanCount={2}
-        useIsScrolling={false}
-        width="100%"
-      >
-        <div
-          onScroll={[Function]}
-          style={
-            Object {
-              "WebkitOverflowScrolling": "touch",
-              "direction": "ltr",
-              "height": 120,
-              "overflow": "auto",
-              "position": "relative",
-              "width": "100%",
-              "willChange": "transform",
-            }
-          }
+        <Card
+          body={false}
+          border="primary"
+          className="sc-bdVaJa iTQBpa"
         >
           <div
-            style={
-              Object {
-                "height": 120,
-                "pointerEvents": undefined,
-                "width": "100%",
-              }
-            }
+            className="sc-bdVaJa iTQBpa card border-primary"
           >
-            <renderRow
-              index={0}
-              key="0"
-              style={
-                Object {
-                  "height": 40,
-                  "left": 0,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": "100%",
-                }
-              }
+            <PanelHeader
+              bg="primary"
+            >
+              <CardHeader
+                className="bg-primary text-white"
+              >
+                <div
+                  className="bg-primary text-white card-header"
+                >
+                  Header
+                </div>
+              </CardHeader>
+            </PanelHeader>
+            <List
+              direction="ltr"
+              height={120}
+              itemCount={3}
+              itemSize={40}
+              layout="vertical"
+              overscanCount={2}
+              useIsScrolling={false}
+              width="100%"
             >
               <div
+                onScroll={[Function]}
                 style={
                   Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "height": 40,
-                    "left": 0,
-                    "paddingLeft": "1.25rem",
-                    "position": "absolute",
-                    "top": 0,
+                    "WebkitOverflowScrolling": "touch",
+                    "direction": "ltr",
+                    "height": 120,
+                    "overflow": "auto",
+                    "position": "relative",
                     "width": "100%",
+                    "willChange": "transform",
                   }
                 }
               >
-                <span>
-                  one
-                   - 
-                  1
-                </span>
-              </div>
-            </renderRow>
-            <renderRow
-              index={1}
-              key="1"
-              style={
-                Object {
-                  "height": 40,
-                  "left": 0,
-                  "position": "absolute",
-                  "top": 40,
-                  "width": "100%",
-                }
-              }
-            >
-              <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "height": 40,
-                    "left": 0,
-                    "paddingLeft": "1.25rem",
-                    "position": "absolute",
-                    "top": 40,
-                    "width": "100%",
+                <div
+                  style={
+                    Object {
+                      "height": 120,
+                      "pointerEvents": undefined,
+                      "width": "100%",
+                    }
                   }
-                }
-              >
-                <span>
-                  two
-                   - 
-                  2
-                </span>
+                >
+                  <renderRow
+                    index={0}
+                    key="0"
+                    style={
+                      Object {
+                        "height": 40,
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "height": 40,
+                          "left": 0,
+                          "paddingLeft": "1.25rem",
+                          "position": "absolute",
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <span>
+                        one
+                         - 
+                        1
+                      </span>
+                    </div>
+                  </renderRow>
+                  <renderRow
+                    index={1}
+                    key="1"
+                    style={
+                      Object {
+                        "height": 40,
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 40,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "height": 40,
+                          "left": 0,
+                          "paddingLeft": "1.25rem",
+                          "position": "absolute",
+                          "top": 40,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <span>
+                        two
+                         - 
+                        2
+                      </span>
+                    </div>
+                  </renderRow>
+                  <renderRow
+                    index={2}
+                    key="2"
+                    style={
+                      Object {
+                        "height": 40,
+                        "left": 0,
+                        "position": "absolute",
+                        "top": 80,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <div
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "display": "flex",
+                          "height": 40,
+                          "left": 0,
+                          "paddingLeft": "1.25rem",
+                          "position": "absolute",
+                          "top": 80,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <span>
+                        three
+                         - 
+                        3
+                      </span>
+                    </div>
+                  </renderRow>
+                </div>
               </div>
-            </renderRow>
-            <renderRow
-              index={2}
-              key="2"
-              style={
-                Object {
-                  "height": 40,
-                  "left": 0,
-                  "position": "absolute",
-                  "top": 80,
-                  "width": "100%",
-                }
-              }
-            >
-              <div
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "display": "flex",
-                    "height": 40,
-                    "left": 0,
-                    "paddingLeft": "1.25rem",
-                    "position": "absolute",
-                    "top": 80,
-                    "width": "100%",
-                  }
-                }
-              >
-                <span>
-                  three
-                   - 
-                  3
-                </span>
-              </div>
-            </renderRow>
+            </List>
           </div>
-        </div>
-      </List>
-    </div>
-  </Card>
+        </Card>
+      </CardWrapper>
+    </StyledComponent>
+  </Styled(CardWrapper)>
 </Lexicon>
 `;
