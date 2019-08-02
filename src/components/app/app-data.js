@@ -1,5 +1,5 @@
 import React from 'react';
-import { ApolloProvider } from 'react-apollo';
+import {ApolloProvider} from 'react-apollo';
 import ApolloClient from 'apollo-boost';
 
 import App from './app-view.js';
