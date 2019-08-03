@@ -5,10 +5,9 @@ const Row = styled.div`
   padding-left: 1.25rem;
   justify-content: space-between;
   align-items: center;
-
-  :hover {
-    background-color: #e9ecef;
-  }
+  ${props => (props.noHover ? null : `
+    :hover { background-color: #e9ecef; }
+  `)}
 `;
 
 const ColWord = styled.div`

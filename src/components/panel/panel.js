@@ -13,7 +13,7 @@ const Panel = styled(CardWrapper)`
   ${props => (props.squareCorner ? 'border-bottom-right-radius: 0;' : null)}
 `;
 
-function PanelHeader({bg, children, ...props}) {
+function PanelHeader({bg, children, className, ...props}) {
   let bgClass = '';
   switch (bg) {
     case 'primary':
@@ -24,7 +24,9 @@ function PanelHeader({bg, children, ...props}) {
       break;
   }
   return (
-    <Card.Header className={bgClass} {...props}>{children}</Card.Header>
+    <Card.Header className={`${bgClass} ${className}`} {...props}>
+      {children}
+    </Card.Header>
   );
 };
 
