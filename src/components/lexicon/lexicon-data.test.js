@@ -10,12 +10,15 @@ it('renders correct content for loading', () => {
   const props = {foo: 'bar'};
 
   const rendered = shallow(
-    <div>{renderContent({loading: true, error: undefined, data}, props)}</div>
+    <div>{renderContent(props, {loading: true, error: undefined, data})}</div>
   );
 
   // console.log(rendered.debug());
 
-  expect(rendered.contains(<p>Loading...</p>)).toBeTruthy();
+  const alert = rendered.find('Alert');
+  expect(alert.exists()).toBeTruthy();
+  expect(alert.prop('variant')).toEqual('secondary');
+  expect(alert.contains('Loading...')).toBeTruthy();
 });
 
 it('renders correct content for error', () => {
@@ -24,12 +27,15 @@ it('renders correct content for error', () => {
   const err = new Error('Some error');
 
   const rendered = shallow(
-    <div>{renderContent({loading: false, error: err, data}, props)}</div>
+    <div>{renderContent(props, {loading: false, error: err, data})}</div>
   );
 
   // console.log(rendered.debug());
 
-  expect(rendered.contains(<p>Error!</p>)).toBeTruthy();
+  const alert = rendered.find('Alert');
+  expect(alert.exists()).toBeTruthy();
+  expect(alert.prop('variant')).toEqual('danger');
+  expect(alert.contains('Error loading data!')).toBeTruthy();
 });
 
 it('renders correct content for data', () => {
@@ -43,7 +49,7 @@ it('renders correct content for data', () => {
   const props = {foo: 'bar'};
 
   const rendered = shallow(
-    <div>{renderContent({loading: false, error: undefined, data}, props)}</div>
+    <div>{renderContent(props, {loading: false, error: undefined, data})}</div>
   );
 
   // console.log(rendered.debug());

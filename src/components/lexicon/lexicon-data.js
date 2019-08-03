@@ -1,25 +1,24 @@
 import React from 'react';
 import {Query} from 'react-apollo';
 import gql from 'graphql-tag';
+import Alert from 'react-bootstrap/Alert';
 
 import Lexicon from './lexicon-view.js';
 
-export function renderContent({loading, error, data}, props) {
+function renderContent(props, {loading, error, data}) {
   if (loading) {
-    return <p>Loading...</p>;
+    return (<Alert variant="secondary">Loading...</Alert>);
   }
   if (error) {
-    return <p>Error!</p>;
+    return (<Alert variant="danger">Error loading data!</Alert>);
   }
   return (
     <Lexicon data={data.lexiconIntegral} {...props} />
   );
 };
 
-export default function LexiconData(props) {
-  const renderChildren = (paramsObj) => {
-    return renderContent(paramsObj, props);
-  };
+function LexiconData(props) {
+  const renderChildren = renderContent.bind(null, props);
 
   return (
     <Query
@@ -35,3 +34,6 @@ export default function LexiconData(props) {
     </Query>
   );
 };
+
+export default LexiconData;
+export {renderContent};
