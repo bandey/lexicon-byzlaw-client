@@ -2,30 +2,16 @@ import React from 'react';
 
 import {Panel, PanelHeader} from '../panel/panel.js';
 import LexiconList from './list/lexicon-list.js';
+import createLexiconRow from './row/lexicon-row-factory.js';
 
 function Lexicon({data}) {
-  function renderRow({index, style}) {
-    const row = data[index];
-    if (!row) {
-      return null;
-    };
-    return (
-      <div style={{
-        display: 'flex', 
-        paddingLeft: '1.25rem', 
-        alignItems: 'center', 
-        ...style
-      }}>
-        <span>{row.w} - {row.c}</span>
-      </div>
-    );
-  };
+  const LexiconRow = createLexiconRow(data);
 
   return (
     <Panel border="primary" squareCorner>
       <PanelHeader bg="primary">Header</PanelHeader>
       <LexiconList itemCount={data.length}>
-        {renderRow}
+        {LexiconRow}
       </LexiconList>
     </Panel>
   );
