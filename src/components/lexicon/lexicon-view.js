@@ -1,17 +1,9 @@
 import React from 'react';
-import {FixedSizeList as List} from 'react-window';
 
 import {Panel, PanelHeader} from '../panel/panel.js';
+import LexiconList from './list/lexicon-list.js';
 
 function Lexicon({data}) {
-  const rowHeight = 40;
-
-  const dataHeight = data.length * rowHeight;
-  let listHeight = Math.floor(document.documentElement.clientHeight * 0.7);
-  if (listHeight > dataHeight) {
-    listHeight = dataHeight;
-  }
-
   function renderRow({index, style}) {
     const row = data[index];
     if (!row) {
@@ -32,14 +24,9 @@ function Lexicon({data}) {
   return (
     <Panel border="primary" squareCorner>
       <PanelHeader bg="primary">Header</PanelHeader>
-      <List
-        width="100%"
-        height={listHeight}
-        itemSize={rowHeight}
-        itemCount={data.length}
-      >
+      <LexiconList itemCount={data.length}>
         {renderRow}
-      </List>
+      </LexiconList>
     </Panel>
   );
 };
