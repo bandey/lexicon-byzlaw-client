@@ -3,9 +3,7 @@ import {Query} from 'react-apollo';
 import gql from 'graphql-tag';
 import Alert from 'react-bootstrap/Alert';
 
-import Lexicon from './lexicon-view.js';
-
-function renderContent(props, {loading, error, data}) {
+function renderChildren(Children, dataName, {loading, error, data}) {
   if (loading) {
     return (<Alert variant="secondary">Loading...</Alert>);
   }
@@ -13,27 +11,25 @@ function renderContent(props, {loading, error, data}) {
     return (<Alert variant="danger">Error loading data!</Alert>);
   }
   return (
-    <Lexicon data={data.lexiconIntegral} {...props} />
+    <Children data={data[dataName]} />
   );
 };
 
-function LexiconData(props) {
-  const renderChildren = renderContent.bind(null, props);
-
+function DataProvider({children, query}) {
   return (
     <Query
       query={
         gql`
           query {
-            lexiconIntegral { w c }
+            ${query.gql}
           }
         `
       }
     >
-      {renderChildren}
+      {renderChildren.bind(null, children, query.name)}
     </Query>
   );
 };
 
-export default LexiconData;
-export {renderContent};
+export default DataProvider;
+export {renderChildren};
