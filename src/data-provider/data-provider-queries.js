@@ -5,4 +5,11 @@ function getLexiconIntegral() {
   };
 };
 
-export {getLexiconIntegral};
+function getLexiconAlone(id) {
+  return {
+    name: 'lexiconAlone',
+    gql: `lexiconAlone(id: "${id}") { w c }`,
+  };
+};
+
+export {getLexiconIntegral, getLexiconAlone};
