@@ -1,7 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+import DataProvider from '../../data-provider/data-provider.js';
+import {getOpusAll} from '../../data-provider/data-provider-queries.js';
 import Choice from '../../components/choice/choice.js';
+
+const queryOpusAll = getOpusAll();
 
 function ChoiceOpus() {
   function wrapLink(id, Child) {
@@ -12,13 +16,18 @@ function ChoiceOpus() {
     );
   };
 
+  function AdapterChoice({data}) {
+    return (
+      <Choice title="Choose lexicon" wrapLink={wrapLink}>
+        {data}
+      </Choice>
+    );
+  };
+
   return (
-    <Choice title="Choose lexicon" wrapLink={wrapLink}>
-      {[
-        {id: 'svge', name: 'Valdemar. Von Zelenden'},
-        {id: 'svla', name: 'Valdemar. De decimis'},
-      ]}
-    </Choice>
+    <DataProvider query={queryOpusAll}>
+      {AdapterChoice}
+    </DataProvider>
   );
 };
 

@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct content 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <ChoiceOpus>
+      <DataProvider
+        query={
+          Object {
+            "gql": "opusAll { id name }",
+            "name": "opusAll",
+          }
+        }
+      >
+        <AdapterChoice
+          data={
+            Array [
+              Object {
+                "id": "one",
+                "name": "Alpha",
+              },
+              Object {
+                "id": "two",
+                "name": "Betta",
+              },
+              Object {
+                "id": "three",
+                "name": "Gamma",
+              },
+            ]
+          }
+        >
+          <Choice
+            title="Choose lexicon"
+            wrapLink={[Function]}
+          >
+            <Link
+              key="one"
+              to="one"
+            >
+              <a
+                href="/one"
+                onClick={[Function]}
+              >
+                Alpha
+              </a>
+            </Link>
+            <Link
+              key="two"
+              to="two"
+            >
+              <a
+                href="/two"
+                onClick={[Function]}
+              >
+                Betta
+              </a>
+            </Link>
+            <Link
+              key="three"
+              to="three"
+            >
+              <a
+                href="/three"
+                onClick={[Function]}
+              >
+                Gamma
+              </a>
+            </Link>
+          </Choice>
+        </AdapterChoice>
+      </DataProvider>
+    </ChoiceOpus>
+  </Router>
+</BrowserRouter>
+`;

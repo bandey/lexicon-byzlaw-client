@@ -1,3 +1,10 @@
+function getOpusAll() {
+  return {
+    name: 'opusAll',
+    gql: 'opusAll { id name }',
+  };
+};
+
 function getLexiconIntegral() {
   return {
     name: 'lexiconIntegral',
@@ -12,4 +19,4 @@ function getLexiconAlone(id) {
   };
 };
 
-export {getLexiconIntegral, getLexiconAlone};
+export {getOpusAll, getLexiconIntegral, getLexiconAlone};
