@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct content 1`] = `
+<Choice
+  title="Make your choice"
+  wrapLink={[Function]}
+>
+  <Styled(CardWrapper)
+    border="primary"
+  >
+    <StyledComponent
+      border="primary"
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": false,
+            "lastClassName": "dxJvVO",
+            "rules": Array [
+              "
+  margin-bottom: 1rem;
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "Styled(CardWrapper)",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": [Function],
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <CardWrapper
+        border="primary"
+        className="sc-bdVaJa dxJvVO"
+      >
+        <Card
+          body={false}
+          border="primary"
+          className="sc-bdVaJa dxJvVO"
+        >
+          <div
+            className="sc-bdVaJa dxJvVO card border-primary"
+          >
+            <PanelHeader
+              bg="primary"
+            >
+              <CardHeader
+                className="bg-primary text-white undefined"
+              >
+                <div
+                  className="bg-primary text-white undefined card-header"
+                >
+                  Make your choice
+                </div>
+              </CardHeader>
+            </PanelHeader>
+            <a
+              href="/one"
+              key="one"
+            >
+              <styled.div>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": true,
+                        "lastClassName": "iuVaGm",
+                        "rules": Array [
+                          "
+  display: flex;
+  padding-left: 1.25rem;
+  height: 40px;
+  align-items: center;
+
+  :hover { background-color: #e9ecef; }
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="sc-bwzfXH iuVaGm"
+                  >
+                    Alpha
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </a>
+            <a
+              href="/two"
+              key="two"
+            >
+              <styled.div>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": true,
+                        "lastClassName": "iuVaGm",
+                        "rules": Array [
+                          "
+  display: flex;
+  padding-left: 1.25rem;
+  height: 40px;
+  align-items: center;
+
+  :hover { background-color: #e9ecef; }
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="sc-bwzfXH iuVaGm"
+                  >
+                    Betta
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </a>
+            <a
+              href="/three"
+              key="three"
+            >
+              <styled.div>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "sc-bwzfXH",
+                        "isStatic": true,
+                        "lastClassName": "iuVaGm",
+                        "rules": Array [
+                          "
+  display: flex;
+  padding-left: 1.25rem;
+  height: 40px;
+  align-items: center;
+
+  :hover { background-color: #e9ecef; }
+",
+                        ],
+                      },
+                      "displayName": "styled.div",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "sc-bwzfXH",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="sc-bwzfXH iuVaGm"
+                  >
+                    Gamma
+                  </div>
+                </StyledComponent>
+              </styled.div>
+            </a>
+          </div>
+        </Card>
+      </CardWrapper>
+    </StyledComponent>
+  </Styled(CardWrapper)>
+</Choice>
+`;
