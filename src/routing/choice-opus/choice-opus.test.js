@@ -49,7 +49,7 @@ it('uses correct query', () => {
 it('renders correct content', () => {
   const rendered = mount(
     <BrowserRouter>
-      <ChoiceOpus />
+      <ChoiceOpus match={{url: "/route/alone"}} />
     </BrowserRouter>
   );
 

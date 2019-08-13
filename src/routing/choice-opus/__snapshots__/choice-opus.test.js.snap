@@ -24,7 +24,13 @@ exports[`renders correct content 1`] = `
       }
     }
   >
-    <ChoiceOpus>
+    <ChoiceOpus
+      match={
+        Object {
+          "url": "/route/alone",
+        }
+      }
+    >
       <DataProvider
         query={
           Object {
@@ -57,10 +63,10 @@ exports[`renders correct content 1`] = `
           >
             <Link
               key="one"
-              to="one"
+              to="/route/alone/one"
             >
               <a
-                href="/one"
+                href="/route/alone/one"
                 onClick={[Function]}
               >
                 Alpha
@@ -68,10 +74,10 @@ exports[`renders correct content 1`] = `
             </Link>
             <Link
               key="two"
-              to="two"
+              to="/route/alone/two"
             >
               <a
-                href="/two"
+                href="/route/alone/two"
                 onClick={[Function]}
               >
                 Betta
@@ -79,10 +85,10 @@ exports[`renders correct content 1`] = `
             </Link>
             <Link
               key="three"
-              to="three"
+              to="/route/alone/three"
             >
               <a
-                href="/three"
+                href="/route/alone/three"
                 onClick={[Function]}
               >
                 Gamma

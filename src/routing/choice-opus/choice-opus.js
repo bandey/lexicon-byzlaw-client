@@ -7,10 +7,10 @@ import Choice from '../../components/choice/choice.js';
 
 const queryOpusAll = getOpusAll();
 
-function ChoiceOpus() {
+function ChoiceOpus({match}) {
   function wrapLink(id, Child) {
     return (
-      <Link key={id} to={`${id}`}>
+      <Link key={id} to={`${match.url}/${id}`}>
         {Child}
       </Link>
     );

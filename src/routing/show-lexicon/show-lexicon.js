@@ -11,7 +11,7 @@ function ShowLexicon({match}) {
 
   return (
     <React.Fragment>
-      <Link to="/">
+      <Link to="/route/alone">
         <BriefPanel>{match.params.id}</BriefPanel>
       </Link>
       <DataProvider query={queryLexiconAlone}>
