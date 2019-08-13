@@ -17,7 +17,7 @@ exports[`renders correct content 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "dxJvVO",
+            "lastClassName": "hkKUQo",
             "rules": Array [
               "
   margin-bottom: 1rem;
@@ -41,15 +41,15 @@ exports[`renders correct content 1`] = `
     >
       <CardWrapper
         border="primary"
-        className="sc-bdVaJa dxJvVO"
+        className="sc-bdVaJa hkKUQo"
       >
         <Card
           body={false}
           border="primary"
-          className="sc-bdVaJa dxJvVO"
+          className="sc-bdVaJa hkKUQo"
         >
           <div
-            className="sc-bdVaJa dxJvVO card border-primary"
+            className="sc-bdVaJa hkKUQo card border-primary"
           >
             <PanelHeader
               bg="primary"

@@ -11,7 +11,11 @@ function CardWrapper({squareCorner, className, children, ...props}) {
 
 const Panel = styled(CardWrapper)`
   margin-bottom: 1rem;
-  ${props => (props.squareCorner ? 'border-bottom-right-radius: 0;' : null)}
+  ${props => (
+    props.squareCorner ? 
+      'border-bottom-left-radius: 0; border-bottom-right-radius: 0;' : 
+      'padding-bottom: 2px;'
+  )}
 `;
 
 function PanelHeader({bg, children, className, ...props}) {

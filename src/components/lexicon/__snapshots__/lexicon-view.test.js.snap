@@ -32,7 +32,7 @@ exports[`renders correct content 1`] = `
           "componentStyle": ComponentStyle {
             "componentId": "sc-bdVaJa",
             "isStatic": false,
-            "lastClassName": "iTQBpa",
+            "lastClassName": "ftHUXG",
             "rules": Array [
               "
   margin-bottom: 1rem;
@@ -57,16 +57,16 @@ exports[`renders correct content 1`] = `
     >
       <CardWrapper
         border="primary"
-        className="sc-bdVaJa iTQBpa"
+        className="sc-bdVaJa ftHUXG"
         squareCorner={true}
       >
         <Card
           body={false}
           border="primary"
-          className="sc-bdVaJa iTQBpa"
+          className="sc-bdVaJa ftHUXG"
         >
           <div
-            className="sc-bdVaJa iTQBpa card border-primary"
+            className="sc-bdVaJa ftHUXG card border-primary"
           >
             <Styled(PanelHeader)
               bg="primary"
