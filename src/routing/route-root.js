@@ -3,11 +3,13 @@ import {Route} from 'react-router-dom';
 
 import RouteAlone from './route-alone.js';
 import ChoiceMode from './choice-mode/choice-mode.js';
+import ShowIntegral from './show-integral/show-integral.js';
 
 function RouteRoot() {
   return (
     <React.Fragment>
       <Route path="/" exact component={ChoiceMode} />
+      <Route path="/route/integral" component={ShowIntegral} />
       <Route path="/route/alone" component={RouteAlone} />
     </React.Fragment>
   );

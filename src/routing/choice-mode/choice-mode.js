@@ -15,6 +15,7 @@ function ChoiceMode() {
   return (
     <Choice title="Choose action" wrapLink={wrapLink}>
       {[
+        {id: 'integral', name: 'Integral lexicon'},
         {id: 'alone', name: 'Ad fontes'},
       ]}
     </Choice>
