@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from 'react-bootstrap/Card';
+import Alert from 'react-bootstrap/Alert';
 
 function CardWrapper({squareCorner, className, children, ...props}) {
   return (
@@ -32,4 +33,12 @@ function PanelHeader({bg, children, className, ...props}) {
 
 const PanelBody = Card.Body;
 
-export {Panel, PanelHeader, PanelBody};
+function BriefPanel({children, className, ...props}) {
+  return (
+    <Alert variant="primary" className={className} {...props}>
+      {children}
+    </Alert>
+  );
+};
+
+export {Panel, PanelHeader, PanelBody, BriefPanel};

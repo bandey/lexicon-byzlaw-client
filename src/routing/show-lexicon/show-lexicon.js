@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Alert from 'react-bootstrap/Alert';
 
+import {BriefPanel} from '../../components/panel/panel.js'
 import DataProvider from '../../data-provider/data-provider.js';
 import {getLexiconAlone} from '../../data-provider/data-provider-queries.js';
 import Lexicon from '../../components/lexicon/lexicon.js';
@@ -12,7 +12,7 @@ function ShowLexicon({match}) {
   return (
     <React.Fragment>
       <Link to="/">
-        <Alert variant="info">{match.params.id}</Alert>
+        <BriefPanel>{match.params.id}</BriefPanel>
       </Link>
       <DataProvider query={queryLexiconAlone}>
         {Lexicon}
