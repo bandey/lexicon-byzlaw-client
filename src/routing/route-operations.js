@@ -12,7 +12,7 @@ function RouteOperations({match}) {
         <BriefPanel>Operations</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceOpus} />
-      <Route path={`${match.path}/:id`} component={RouteOperationsId1} />
+      <Route path={`${match.path}/:id1`} component={RouteOperationsId1} />
     </React.Fragment>
   );
 };

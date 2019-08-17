@@ -10,10 +10,10 @@ function RouteOperationsId2({match}) {
   return (
     <React.Fragment>
       <Link to={delLastElemFromURL(match.url)}>
-        <BriefPanel>{match.params.id}</BriefPanel>
+        <BriefPanel>{match.params.id2}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceOperation} />
-      <Route path={`${match.path}/:id`} component={ShowProduct} />
+      <Route path={`${match.path}/:operation`} component={ShowProduct} />
     </React.Fragment>
   );
 };
