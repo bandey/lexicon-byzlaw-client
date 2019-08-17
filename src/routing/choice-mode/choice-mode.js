@@ -17,6 +17,7 @@ function ChoiceMode() {
       {[
         {id: 'integral', name: 'Integral lexicon'},
         {id: 'alone', name: 'Ad fontes'},
+        {id: 'operations', name: 'Operations'},
       ]}
     </Choice>
   );
