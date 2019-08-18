@@ -6,12 +6,16 @@ import ChoiceOpus from './choice-opus/choice-opus.js';
 import RouteOperationsId1 from './route-operations-id1.js';
 
 function RouteOperations({match}) {
+  function ChoiceLexicon(props) {
+    return <ChoiceOpus title="Choose lexicon 1" {...props} />;
+  };
+
   return (
     <React.Fragment>
       <Link to="/">
         <BriefPanel>Operations</BriefPanel>
       </Link>
-      <Route exact path={match.path} component={ChoiceOpus} />
+      <Route exact path={match.path} component={ChoiceLexicon} />
       <Route path={`${match.path}/:id1`} component={RouteOperationsId1} />
     </React.Fragment>
   );

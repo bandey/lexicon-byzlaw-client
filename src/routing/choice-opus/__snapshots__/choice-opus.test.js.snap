@@ -30,6 +30,7 @@ exports[`renders correct content 1`] = `
           "url": "/route/alone",
         }
       }
+      title="Choose"
     >
       <DataProvider
         query={
@@ -58,7 +59,7 @@ exports[`renders correct content 1`] = `
           }
         >
           <Choice
-            title="Choose lexicon"
+            title="Choose"
             wrapLink={[Function]}
           >
             <Link

@@ -7,7 +7,7 @@ import Choice from '../../components/choice/choice.js';
 
 const queryOpusAll = getOpusAll();
 
-function ChoiceOpus({match}) {
+function ChoiceOpus({title, match}) {
   function wrapLink(id, Child) {
     return (
       <Link key={id} to={`${match.url}/${id}`}>
@@ -18,7 +18,7 @@ function ChoiceOpus({match}) {
 
   function AdapterChoice({data}) {
     return (
-      <Choice title="Choose lexicon" wrapLink={wrapLink}>
+      <Choice title={title} wrapLink={wrapLink}>
         {data}
       </Choice>
     );
