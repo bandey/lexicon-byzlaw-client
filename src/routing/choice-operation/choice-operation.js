@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import Choice from '../../components/choice/choice.js';
 
 function ChoiceOperation({match}) {
-  function wrapLink(id, Child) {
+  function wrapLink({id}, Child) {
     return (
       <Link key={id} to={`${match.url}/${id}`}>
         {Child}

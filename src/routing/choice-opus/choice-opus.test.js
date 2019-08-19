@@ -28,7 +28,7 @@ jest.mock('../../components/choice/choice.js');
 Choice.mockImplementation(({title, children, wrapLink}) => {
   return (
     <React.Fragment>
-      {children.map(item => wrapLink(item.id, item.name))}
+      {children.map(item => wrapLink(item, item.name))}
     </React.Fragment>
   );
 });

@@ -14,7 +14,7 @@ it('renders correct content', () => {
     {id: 'three', name: 'Gamma'},
   ];
 
-  function wrapLink(id, Child) {
+  function wrapLink({id}, Child) {
     return (
       <a key={id} href={`/${id}`}>
         {Child}

@@ -11,7 +11,7 @@ function Choice({title, children, wrapLink}) {
   return (
     <Panel border="primary">
       <PanelHeader bg="primary">{title}</PanelHeader>
-      {children.map(item => wrapLink(item.id, <Option>{item.name}</Option>))}
+      {children.map(item => wrapLink(item, <Option>{item.name}</Option>))}
     </Panel>
   );
 };
