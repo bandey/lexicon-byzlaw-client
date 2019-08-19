@@ -64,6 +64,7 @@ exports[`renders correct content 1`] = `
           >
             <Link
               key="one"
+              onClick={null}
               to="/route/alone/one"
             >
               <a
@@ -75,6 +76,7 @@ exports[`renders correct content 1`] = `
             </Link>
             <Link
               key="two"
+              onClick={null}
               to="/route/alone/two"
             >
               <a
@@ -86,6 +88,7 @@ exports[`renders correct content 1`] = `
             </Link>
             <Link
               key="three"
+              onClick={null}
               to="/route/alone/three"
             >
               <a

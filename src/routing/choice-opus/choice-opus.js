@@ -7,10 +7,11 @@ import Choice from '../../components/choice/choice.js';
 
 const queryOpusAll = getOpusAll();
 
-function ChoiceOpus({title, match}) {
-  function wrapLink({id}, Child) {
+function ChoiceOpus({title, match, onChoose}) {
+  function wrapLink(item, Child) {
+    const onClick = onChoose ? () => onChoose(item) : null;
     return (
-      <Link key={id} to={`${match.url}/${id}`}>
+      <Link key={item.id} to={`${match.url}/${item.id}`} onClick={onClick}>
         {Child}
       </Link>
     );
