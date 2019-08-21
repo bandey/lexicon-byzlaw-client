@@ -42,10 +42,10 @@ function getLexiconAbjunction(id1, id2) {
 
 function getLexiconOperation(operation, id1, id2) {
   switch (operation) {
-    case 'conjunction': return getLexiconConjunction(id1, id2);
-    case 'disjunction': return getLexiconDisjunction(id1, id2);
-    case 'abjunction12': return getLexiconAbjunction(id1, id2);
-    case 'abjunction21': return getLexiconAbjunction(id2, id1);
+    case 'intersection': return getLexiconConjunction(id1, id2);
+    case 'union': return getLexiconDisjunction(id1, id2);
+    case 'difference12': return getLexiconAbjunction(id1, id2);
+    case 'difference21': return getLexiconAbjunction(id2, id1);
     default: return {name: '', gql: ''};
   }
 };

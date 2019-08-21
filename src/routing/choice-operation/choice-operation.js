@@ -16,10 +16,10 @@ function ChoiceOperation({match, onChoose}) {
   return (
     <Choice title="Choose operation" wrapLink={wrapLink}>
       {[
-        {id: 'conjunction', name: 'Conjunction'},
-        {id: 'disjunction', name: 'Disjunction'},
-        {id: 'abjunction12', name: 'Abjunction 1 \\ 2'},
-        {id: 'abjunction21', name: 'Abjunction 2 \\ 1'},
+        {id: 'intersection', name: 'Intersection 1 ∩ 2'},
+        {id: 'union', name: 'Union 1 ∪ 2'},
+        {id: 'difference12', name: 'Set difference 1 \\ 2'},
+        {id: 'difference21', name: 'Set difference 2 \\ 1'},
       ]}
     </Choice>
   );
