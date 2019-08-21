@@ -33,10 +33,19 @@ function getLexiconDisjunction(id1, id2) {
   };
 };
 
+function getLexiconAbjunction(id1, id2) {
+  return {
+    name: 'lexiconAbjunction',
+    gql: `lexiconAbjunction(id1: "${id1}", id2: "${id2}") { w c }`,
+  };
+};
+
 function getLexiconOperation(operation, id1, id2) {
   switch (operation) {
     case 'conjunction': return getLexiconConjunction(id1, id2);
     case 'disjunction': return getLexiconDisjunction(id1, id2);
+    case 'abjunction12': return getLexiconAbjunction(id1, id2);
+    case 'abjunction21': return getLexiconAbjunction(id2, id1);
     default: return {name: '', gql: ''};
   }
 };
@@ -47,5 +56,6 @@ export {
   getLexiconAlone, 
   getLexiconConjunction,
   getLexiconDisjunction,
+  getLexiconAbjunction,
   getLexiconOperation,
 };

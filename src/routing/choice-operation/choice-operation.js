@@ -17,6 +17,8 @@ function ChoiceOperation({match}) {
       {[
         {id: 'conjunction', name: 'Conjunction'},
         {id: 'disjunction', name: 'Disjunction'},
+        {id: 'abjunction12', name: 'Abjunction 1 \\ 2'},
+        {id: 'abjunction21', name: 'Abjunction 2 \\ 1'},
       ]}
     </Choice>
   );
