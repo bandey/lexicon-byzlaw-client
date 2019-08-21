@@ -3,10 +3,11 @@ import {Link} from 'react-router-dom';
 
 import Choice from '../../components/choice/choice.js';
 
-function ChoiceOperation({match}) {
-  function wrapLink({id}, Child) {
+function ChoiceOperation({match, onChoose}) {
+  function wrapLink(item, Child) {
+    const onClick = onChoose ? () => onChoose(item) : null;
     return (
-      <Link key={id} to={`${match.url}/${id}`}>
+      <Link key={item.id} to={`${match.url}/${item.id}`} onClick={onClick}>
         {Child}
       </Link>
     );
