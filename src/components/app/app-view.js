@@ -6,7 +6,7 @@ import Router from '../../routing/router.js';
 function App() {
   return (
     <React.Fragment>
-      <AppHeader>Lexicon Byzantine Law and Acts</AppHeader>
+      <AppHeader>Lexicons Byzantine Law and Acts</AppHeader>
       <Router />
     </React.Fragment>
   );
