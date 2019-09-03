@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {debounce} from 'debounce';
-import {FixedSizeList as List} from 'react-window';
+
+import {List} from './lexicon-list-styles.js';
 
 function LexiconList({itemCount, children}) {
   const rowHeight = 40;

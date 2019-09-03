@@ -18,7 +18,7 @@ it('uses sum heigth of data if list is short', () => {
 
   // console.log(rendered.debug());
 
-  const list = rendered.find('List');
+  const list = rendered.find('Styled(List)');
   expect(list.exists()).toBeTruthy();
   expect(list.prop('itemCount')).toEqual(5);
   expect(list.prop('height')).toEqual(200); // =5*40
@@ -29,7 +29,7 @@ it('uses part of client height if list is long', () => {
 
   // console.log(rendered.debug());
 
-  const list = rendered.find('List');
+  const list = rendered.find('Styled(List)');
   expect(list.exists()).toBeTruthy();
   expect(list.prop('itemCount')).toEqual(10);
   expect(list.prop('height')).toEqual(350); // =0.7*500
@@ -40,7 +40,7 @@ it('renders children', () => {
 
   // console.log(rendered.debug());
 
-  const list = rendered.find('List');
+  const list = rendered.find('Styled(List)');
   expect(list.exists()).toBeTruthy();
   expect(list.contains('ChildrenItem')).toBeTruthy();
 });

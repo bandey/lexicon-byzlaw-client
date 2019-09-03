@@ -27,6 +27,7 @@ module.exports = {
       { from: './src/robots.txt', to: './' },
       { from: './src/icons', to: './icons/' },
       { from: './node_modules/bootstrap/dist/css/bootstrap.min.css', to: './styles/' },
+      { from: './src/fonts', to: './fonts' },
     ], { copyUnmodified: false }),
   ],
   devServer: {
