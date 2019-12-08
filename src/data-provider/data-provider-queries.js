@@ -5,10 +5,11 @@ function getOpusAll() {
   };
 };
 
-function getLexiconIntegral() {
+function getLexiconIntegral(lingua) {
+  const params = lingua ? `(lingua: "${lingua}")` : '';
   return {
     name: 'lexiconIntegral',
-    gql: 'lexiconIntegral { w c }',
+    gql: `lexiconIntegral${params} { w c }`,
   };
 };
 
