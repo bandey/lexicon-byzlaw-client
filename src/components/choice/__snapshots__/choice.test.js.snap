@@ -76,7 +76,7 @@ exports[`renders correct content 1`] = `
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bwzfXH",
-                        "isStatic": true,
+                        "isStatic": false,
                         "lastClassName": "iuVaGm",
                         "rules": Array [
                           "
@@ -121,7 +121,7 @@ exports[`renders correct content 1`] = `
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bwzfXH",
-                        "isStatic": true,
+                        "isStatic": false,
                         "lastClassName": "iuVaGm",
                         "rules": Array [
                           "
@@ -166,7 +166,7 @@ exports[`renders correct content 1`] = `
                       "attrs": Array [],
                       "componentStyle": ComponentStyle {
                         "componentId": "sc-bwzfXH",
-                        "isStatic": true,
+                        "isStatic": false,
                         "lastClassName": "iuVaGm",
                         "rules": Array [
                           "

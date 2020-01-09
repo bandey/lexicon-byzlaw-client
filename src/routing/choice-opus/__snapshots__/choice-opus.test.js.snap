@@ -67,36 +67,54 @@ exports[`renders correct content 1`] = `
               onClick={null}
               to="/route/alone/one"
             >
-              <a
+              <LinkAnchor
                 href="/route/alone/one"
-                onClick={[Function]}
+                navigate={[Function]}
+                onClick={null}
               >
-                Alpha
-              </a>
+                <a
+                  href="/route/alone/one"
+                  onClick={[Function]}
+                >
+                  Alpha
+                </a>
+              </LinkAnchor>
             </Link>
             <Link
               key="two"
               onClick={null}
               to="/route/alone/two"
             >
-              <a
+              <LinkAnchor
                 href="/route/alone/two"
-                onClick={[Function]}
+                navigate={[Function]}
+                onClick={null}
               >
-                Betta
-              </a>
+                <a
+                  href="/route/alone/two"
+                  onClick={[Function]}
+                >
+                  Betta
+                </a>
+              </LinkAnchor>
             </Link>
             <Link
               key="three"
               onClick={null}
               to="/route/alone/three"
             >
-              <a
+              <LinkAnchor
                 href="/route/alone/three"
-                onClick={[Function]}
+                navigate={[Function]}
+                onClick={null}
               >
-                Gamma
-              </a>
+                <a
+                  href="/route/alone/three"
+                  onClick={[Function]}
+                >
+                  Gamma
+                </a>
+              </LinkAnchor>
             </Link>
           </Choice>
         </AdapterChoice>
