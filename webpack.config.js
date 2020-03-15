@@ -7,7 +7,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     publicPath: '/',
-    filename: 'main.js'
+    filename: 'main.js',
+    chunkFilename: '[name].chunk.js',
   },
   module: {
     rules: [
