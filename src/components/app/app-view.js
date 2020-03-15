@@ -10,7 +10,7 @@ function AppView() {
 
   return (
     <React.Fragment>
-      <AppHeader>{t('Lexicons Byzantine Law and Acts')}</AppHeader>
+      <AppHeader>{t('$Lexicons title')}</AppHeader>
       <Router />
     </React.Fragment>
   );

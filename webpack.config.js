@@ -26,9 +26,10 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: './src/index.html', to: './' },
       { from: './src/robots.txt', to: './' },
-      { from: './src/icons', to: './icons/' },
+      { from: './src/icons/', to: './icons/' },
       { from: './node_modules/bootstrap/dist/css/bootstrap.min.css', to: './styles/' },
-      { from: './src/fonts', to: './fonts' },
+      { from: './src/fonts/', to: './fonts/' },
+      { from: './src/i18n/locales/', to: './locales/' },
     ], { copyUnmodified: false }),
   ],
   devServer: {
