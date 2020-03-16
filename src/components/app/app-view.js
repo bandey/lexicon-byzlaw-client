@@ -1,8 +1,11 @@
 import React, {Suspense} from 'react';
 import {useTranslation} from 'react-i18next';
 import Alert from 'react-bootstrap/Alert';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import {AppHeader} from './app-styles.js';
+import LangSelector from '../lang-selector/lang-selector.js';
 import Router from '../../routing/router.js';
 
 function AppView() {
@@ -10,7 +13,14 @@ function AppView() {
 
   return (
     <React.Fragment>
-      <AppHeader>{t('$Lexicons title')}</AppHeader>
+      <Row>
+        <Col md={9}>
+          <AppHeader>{t('$Lexicons title')}</AppHeader>
+        </Col>
+        <Col md={3}>
+          <LangSelector />
+        </Col>
+      </Row>
       <Router />
     </React.Fragment>
   );
