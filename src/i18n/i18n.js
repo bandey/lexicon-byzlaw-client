@@ -34,8 +34,18 @@ function setupLanguage() {
     .use(initReactI18next) // pass the i18n instance to react-i18next
     .init(i18nConfig)
     .then((t) => {
-      document.title = t('$Document title');
+      translateDocStuff(i18next.language, t);
+      i18next.on('languageChanged', onLanguageChanged);
     });
+};
+
+function onLanguageChanged(lang) {
+  translateDocStuff(lang, i18next.getFixedT(lang, 'translation'));
+};
+
+function translateDocStuff(lang, t) {
+  document.documentElement.lang = lang;
+  document.title = t('$Document title');
 };
 
 export default i18next;
