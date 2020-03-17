@@ -5,14 +5,27 @@ Enzyme.configure({adapter: new Adapter()});
 
 import enzymeToJson from 'enzyme-to-json';
 
+import i18next from 'i18next';
+import {initReactI18next} from 'react-i18next';
+
 import Lexicon from './lexicon-view.js';
 
-beforeAll(() => {
+beforeAll((done) => {
   Object.defineProperty(
     document.documentElement,
     'clientHeight',
     {value: 500, configurable: true, writable: true}
   );
+
+  i18next
+    .use(initReactI18next)
+    .init({
+      debug: false,
+      lng: 'cimode',
+      resources: {},
+      interpolation: {escapeValue: false},
+    })
+    .then(() => done());
 });
 
 it('renders correct content for empty data', () => {

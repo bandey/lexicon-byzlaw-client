@@ -3,5 +3,9 @@
   "$Lexicons title": "Lexicons «Byzantine Law and Acts»",
   "$Language": "english",
   "$Loading": "Loading...",
-  "$Error loading": "Error loading data!"
+  "$Error loading": "Error loading data!",
+  "Word": "Word",
+  "Qty": "Qty",
+  "Qty1": "Qty1",
+  "Qty2": "Qty2"
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import {useTranslation} from 'react-i18next';
 
 import {Panel} from '../panel/panel.js';
 import {PanelHeaderForList} from './lexicon-styles.js';
@@ -7,22 +8,24 @@ import LexiconList from './list/lexicon-list.js';
 import createLexiconRow from './row/lexicon-row-factory.js';
 
 function Lexicon({data}) {
+  const {t} = useTranslation();
+
   let headerRow, lexiconRow;
 
   if ((data) && (data[0]) && ((data[0].c1) || (data[0].c2))) { // 3 columns
     headerRow = (
       <Row noHover>
-        <ColWord>Word</ColWord>
-        <ColCount>Qty1</ColCount>
-        <ColCount>Qty2</ColCount>
+        <ColWord>{t('Word')}</ColWord>
+        <ColCount>{t('Qty1')}</ColCount>
+        <ColCount>{t('Qty2')}</ColCount>
       </Row>
     );
     lexiconRow = createLexiconRow(data, 'c1', 'c2');
   } else { // 2 columns
     headerRow = (
       <Row noHover>
-        <ColWord>Word</ColWord>
-        <ColCount>Qty</ColCount>
+        <ColWord>{t('Word')}</ColWord>
+        <ColCount>{t('Qty')}</ColCount>
       </Row>
     );
     lexiconRow = createLexiconRow(data, 'c', null);
