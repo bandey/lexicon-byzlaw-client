@@ -1,9 +1,12 @@
 import React from 'react';
+import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 
 import Choice from '../../components/choice/choice.js';
 
 function ChoiceMode() {
+  const {t} = useTranslation();
+
   function wrapLink({id}, Child) {
     return (
       <Link key={id} to={`/route/${id}`}>
@@ -13,11 +16,11 @@ function ChoiceMode() {
   };
 
   return (
-    <Choice title="Choose action" wrapLink={wrapLink}>
+    <Choice title={t('Choose action')} wrapLink={wrapLink}>
       {[
-        {id: 'integral', name: 'Integral lexicon'},
-        {id: 'alone', name: 'Ad fontes'},
-        {id: 'operations', name: 'Operations'},
+        {id: 'integral', name: t('Integral lexicon')},
+        {id: 'alone', name: t('Ad fontes')},
+        {id: 'operations', name: t('Operations')},
       ]}
     </Choice>
   );

@@ -1,9 +1,12 @@
 import React from 'react';
+import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 
 import Choice from '../../components/choice/choice.js';
 
 function ChoiceLingua({title, match, onChoose}) {
+  const {t} = useTranslation();
+
   function wrapLink(item, Child) {
     const onClick = onChoose ? () => onChoose(item) : null;
     return (
@@ -16,11 +19,11 @@ function ChoiceLingua({title, match, onChoose}) {
   return (
     <Choice title={title} wrapLink={wrapLink}>
       {[
-        {id: 'lat', name: 'Latin'},
-        {id: 'gre', name: 'Greek'},
-        {id: 'cyr', name: 'Slavonic'},
-        {id: 'gla', name: 'Glagolitic'},
-        {id: 'mix', name: 'Mixed'},
+        {id: 'lat', name: t('Latin')},
+        {id: 'gre', name: t('Greek')},
+        {id: 'cyr', name: t('Slavonic')},
+        {id: 'gla', name: t('Glagolitic')},
+        {id: 'mix', name: t('Mixed')},
       ]}
     </Choice>
   );

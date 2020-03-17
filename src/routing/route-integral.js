@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import {useTranslation} from 'react-i18next';
 import {Route, Link} from 'react-router-dom';
 
 import {StoreContext} from '../store/store.js';
@@ -7,12 +8,13 @@ import ChoiceLingua from './choice-lingua/choice-lingua.js';
 import ShowIntegral from './show-integral/show-integral.js';
 
 function RouteIntegral({match}) {
+  const {t} = useTranslation();
   const {setLinguaName} = useContext(StoreContext);
 
   function ChoiceLinguaWrapper(props) {
     return (
       <ChoiceLingua
-        title="Choose language"
+        title={t('Choose language')}
         onChoose={(item) => setLinguaName(item.name)}
         {...props}
       />
@@ -22,7 +24,7 @@ function RouteIntegral({match}) {
   return (
     <React.Fragment>
       <Link to="/">
-        <BriefPanel>Integral lexicon</BriefPanel>
+        <BriefPanel>{t('Integral lexicon')}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceLinguaWrapper} />
       <Route path={`${match.path}/:lingua`} component={ShowIntegral} />

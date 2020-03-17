@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import {useTranslation} from 'react-i18next';
 import {Route, Link} from 'react-router-dom';
 
 import {StoreContext} from '../store/store.js';
@@ -8,12 +9,13 @@ import ChoiceOpus from './choice-opus/choice-opus.js';
 import RouteOperationsId2 from './route-operations-id2.js';
 
 function RouteOperationsId1({match}) {
+  const {t} = useTranslation();
   const {opusName1, setOpusName2} = useContext(StoreContext);
 
   function ChoiceLexicon(props) {
     return (
       <ChoiceOpus
-        title="Choose lexicon 2"
+        title={t('Choose lexicon 2')}
         onChoose={(item) => setOpusName2(item.name)}
         {...props}
       />
