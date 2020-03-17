@@ -1,26 +1,13 @@
 import React, {Suspense} from 'react';
-import {useTranslation} from 'react-i18next';
 import Alert from 'react-bootstrap/Alert';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
-import {AppHeader} from './app-styles.js';
-import LangSelector from '../lang-selector/lang-selector.js';
+import AppHeader from './header/app-header.js';
 import Router from '../../routing/router.js';
 
 function AppView() {
-  const {t} = useTranslation();
-
   return (
     <React.Fragment>
-      <Row>
-        <Col md={9}>
-          <AppHeader>{t('$Lexicons title')}</AppHeader>
-        </Col>
-        <Col md={3}>
-          <LangSelector />
-        </Col>
-      </Row>
+      <AppHeader />
       <Router />
     </React.Fragment>
   );

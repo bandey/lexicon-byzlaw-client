@@ -1,7 +1,6 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import DropdownItem from 'react-bootstrap/DropdownItem';
+import Dropdown from 'react-bootstrap/Dropdown';
 
 function LangSelector() {
   const {t, i18n} = useTranslation();
@@ -11,10 +10,15 @@ function LangSelector() {
   };
 
   return (
-    <DropdownButton id="langSelector" title={t('$Language')} variant="info">
-      <DropdownItem as="button" onClick={() => changeLang('en')}>english</DropdownItem>
-      <DropdownItem as="button" onClick={() => changeLang('ru')}>русский</DropdownItem>
-    </DropdownButton>
+    <Dropdown>
+      <Dropdown.Toggle id="langSelector" variant="info" style={{'width': '100%'}}>
+        {t('$Language')}
+      </Dropdown.Toggle>
+      <Dropdown.Menu style={{'width': '100%'}}>
+        <Dropdown.Item as="button" onClick={() => changeLang('en')}>english</Dropdown.Item>
+        <Dropdown.Item as="button" onClick={() => changeLang('ru')}>русский</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
   );
 };
 
