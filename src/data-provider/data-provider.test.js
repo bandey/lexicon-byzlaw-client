@@ -9,11 +9,24 @@ function Dummy() {
   return (<div>Dummy</div>);
 }
 
+function translate(text) {
+  return text;
+}
+
 it('renders correct content for loading', () => {
   const data = {};
 
   const rendered = shallow(
-    <div>{renderChildren(Dummy, 'someQuery', {loading: true, error: undefined, data})}</div>
+    <div>
+      {
+        renderChildren(
+          Dummy,
+          'someQuery',
+          translate,
+          {loading: true, error: undefined, data}
+        )
+      }
+    </div>
   );
 
   // console.log(rendered.debug());
@@ -21,7 +34,7 @@ it('renders correct content for loading', () => {
   const alert = rendered.find('Alert');
   expect(alert.exists()).toBeTruthy();
   expect(alert.prop('variant')).toEqual('secondary');
-  expect(alert.contains('Loading...')).toBeTruthy();
+  expect(alert.contains('$Loading')).toBeTruthy();
 });
 
 it('renders correct content for error', () => {
@@ -29,7 +42,16 @@ it('renders correct content for error', () => {
   const err = new Error('Some error');
 
   const rendered = shallow(
-    <div>{renderChildren(Dummy, 'someQuery', {loading: false, error: err, data})}</div>
+    <div>
+      {
+        renderChildren(
+          Dummy,
+          'someQuery',
+          translate,
+          {loading: false, error: err, data}
+        )
+      }
+    </div>
   );
 
   // console.log(rendered.debug());
@@ -37,7 +59,7 @@ it('renders correct content for error', () => {
   const alert = rendered.find('Alert');
   expect(alert.exists()).toBeTruthy();
   expect(alert.prop('variant')).toEqual('danger');
-  expect(alert.contains('Error loading data!')).toBeTruthy();
+  expect(alert.contains('$Error loading')).toBeTruthy();
 });
 
 it('renders correct content for data', () => {
@@ -50,7 +72,16 @@ it('renders correct content for data', () => {
   };
 
   const rendered = shallow(
-    <div>{renderChildren(Dummy, 'someQuery', {loading: false, error: undefined, data})}</div>
+    <div>
+      {
+        renderChildren(
+          Dummy,
+          'someQuery',
+          translate,
+          {loading: false, error: undefined, data}
+        )
+      }
+    </div>
   );
 
   // console.log(rendered.debug());

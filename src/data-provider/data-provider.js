@@ -1,14 +1,15 @@
 import React from 'react';
+import {useTranslation} from 'react-i18next';
 import {Query} from 'react-apollo';
 import gql from 'graphql-tag';
 import Alert from 'react-bootstrap/Alert';
 
-function renderChildren(Children, dataName, {loading, error, data}) {
+function renderChildren(Children, dataName, t, {loading, error, data}) {
   if (loading) {
-    return (<Alert variant="secondary">Loading...</Alert>);
+    return (<Alert variant="secondary">{t('$Loading')}</Alert>);
   }
   if (error) {
-    return (<Alert variant="danger">Error loading data!</Alert>);
+    return (<Alert variant="danger">{t('$Error loading')}</Alert>);
   }
   return (
     <Children data={data[dataName]} />
@@ -16,6 +17,8 @@ function renderChildren(Children, dataName, {loading, error, data}) {
 };
 
 function DataProvider({children, query}) {
+  const {t} = useTranslation();
+
   return (
     <Query
       query={
@@ -26,7 +29,7 @@ function DataProvider({children, query}) {
         `
       }
     >
-      {renderChildren.bind(null, children, query.name)}
+      {renderChildren.bind(null, children, query.name, t)}
     </Query>
   );
 };

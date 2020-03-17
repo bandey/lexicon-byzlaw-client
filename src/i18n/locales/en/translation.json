@@ -1,5 +1,7 @@
 {
   "$Document title": "Lexicons",
   "$Lexicons title": "Lexicons «Byzantine Law and Acts»",
-  "$Language": "english"
+  "$Language": "english",
+  "$Loading": "Loading...",
+  "$Error loading": "Error loading data!"
 }
