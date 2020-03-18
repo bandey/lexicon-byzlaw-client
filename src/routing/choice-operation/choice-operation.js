@@ -19,10 +19,10 @@ function ChoiceOperation({match, onChoose}) {
   return (
     <Choice title={t('Choose operation')} wrapLink={wrapLink}>
       {[
-        {id: 'intersection', name: t('Intersection 1 2')},
-        {id: 'union', name: t('Union 1 2')},
-        {id: 'difference12', name: t('Set difference 1 2')},
-        {id: 'difference21', name: t('Set difference 2 1')},
+        {id: 'intersection', name: t(`$operationNames.intersection`)},
+        {id: 'union', name: t('$operationNames.union')},
+        {id: 'difference12', name: t('$operationNames.difference12')},
+        {id: 'difference21', name: t('$operationNames.difference21')},
       ]}
     </Choice>
   );

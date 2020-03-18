@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 
 import {StoreContext} from '../../store/store.js';
@@ -9,13 +10,14 @@ import {getLexiconIntegral} from '../../data-provider/data-provider-queries.js';
 import Lexicon from '../../components/lexicon/lexicon.js';
 
 function ShowIntegral({match}) {
-  const {linguaName} = useContext(StoreContext);
+  const {t} = useTranslation();
+  const {linguaId} = useContext(StoreContext);
   const queryLexiconIntegral = getLexiconIntegral(match.params.lingua);
 
   return (
     <React.Fragment>
       <Link to={delLastElemFromURL(match.url)}>
-        <BriefPanel>{linguaName}</BriefPanel>
+        <BriefPanel>{t(`$linguaNames.${linguaId}`)}</BriefPanel>
       </Link>
       <DataProvider query={queryLexiconIntegral}>
         {Lexicon}

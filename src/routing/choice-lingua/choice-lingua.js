@@ -19,11 +19,11 @@ function ChoiceLingua({title, match, onChoose}) {
   return (
     <Choice title={title} wrapLink={wrapLink}>
       {[
-        {id: 'lat', name: t('Latin')},
-        {id: 'gre', name: t('Greek')},
-        {id: 'cyr', name: t('Slavonic')},
-        {id: 'gla', name: t('Glagolitic')},
-        {id: 'mix', name: t('Mixed')},
+        {id: 'lat', name: t(`$linguaNames.lat`)},
+        {id: 'gre', name: t(`$linguaNames.gre`)},
+        {id: 'cyr', name: t(`$linguaNames.cyr`)},
+        {id: 'gla', name: t(`$linguaNames.gla`)},
+        {id: 'mix', name: t(`$linguaNames.mix`)},
       ]}
     </Choice>
   );

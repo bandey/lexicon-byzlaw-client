@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import {useTranslation} from 'react-i18next';
 import {Route, Link} from 'react-router-dom';
 
 import {StoreContext} from '../store/store.js';
@@ -8,19 +9,25 @@ import ChoiceOperation from './choice-operation/choice-operation.js';
 import ShowProduct from './show-product/show-product.js';
 
 function RouteOperationsId2({match}) {
-  const {opusName2, operationName, setOperationName} = useContext(StoreContext);
+  const {t} = useTranslation();
+  const {opusName2, operationId, setOperationId} = useContext(StoreContext);
 
   function ChoiceOperationWrapper(props) {
     return (
       <ChoiceOperation
-        onChoose={(item) => setOperationName(item.name)}
+        onChoose={(item) => setOperationId(item.id)}
         {...props}
       />
     );
   };
 
   function ShowProductWrapper(props) {
-    return <ShowProduct operationName={operationName} {...props} />;
+    return (
+      <ShowProduct 
+        operationName={t(`$operationNames.${operationId}`)}
+        {...props}
+      />
+    );
   };
 
   return (

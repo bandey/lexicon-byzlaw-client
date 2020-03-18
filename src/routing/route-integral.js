@@ -9,13 +9,13 @@ import ShowIntegral from './show-integral/show-integral.js';
 
 function RouteIntegral({match}) {
   const {t} = useTranslation();
-  const {setLinguaName} = useContext(StoreContext);
+  const {setLinguaId} = useContext(StoreContext);
 
   function ChoiceLinguaWrapper(props) {
     return (
       <ChoiceLingua
         title={t('Choose language')}
-        onChoose={(item) => setLinguaName(item.name)}
+        onChoose={(item) => setLinguaId(item.id)}
         {...props}
       />
     );

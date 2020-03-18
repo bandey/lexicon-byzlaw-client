@@ -3,22 +3,22 @@ import React, {useState} from 'react';
 const StoreContext = React.createContext();
 
 function StoreProvider({children}) {
-  const [linguaName, setLinguaName] = useState('');
+  const [linguaId, setLinguaId] = useState('');
   const [opusName1, setOpusName1] = useState('');
   const [opusName2, setOpusName2] = useState('');
-  const [operationName, setOperationName] = useState('');
+  const [operationId, setOperationId] = useState('');
 
   return (
     <StoreContext.Provider
       value={{
-        linguaName,
+        linguaId,
         opusName1,
         opusName2,
-        operationName,
-        setLinguaName,
+        operationId,
+        setLinguaId,
         setOpusName1,
         setOpusName2,
-        setOperationName,
+        setOperationId,
       }}
     >
       {children}
