@@ -8,201 +8,70 @@ exports[`renders correct content 1`] = `
   <Styled(CardWrapper)
     border="primary"
   >
-    <StyledComponent
+    <CardWrapper
       border="primary"
-      forwardedComponent={
-        Object {
-          "$$typeof": Symbol(react.forward_ref),
-          "attrs": Array [],
-          "componentStyle": ComponentStyle {
-            "componentId": "sc-bdVaJa",
-            "isStatic": false,
-            "lastClassName": "hkKUQo",
-            "rules": Array [
-              "
-  margin-bottom: 1rem;
-  ",
-              [Function],
-              "
-",
-            ],
-          },
-          "displayName": "Styled(CardWrapper)",
-          "foldedComponentIds": Array [],
-          "render": [Function],
-          "styledComponentId": "sc-bdVaJa",
-          "target": [Function],
-          "toString": [Function],
-          "warnTooManyClasses": [Function],
-          "withComponent": [Function],
-        }
-      }
-      forwardedRef={null}
+      className="sc-AxjAm jbFUXm"
     >
-      <CardWrapper
+      <Card
+        body={false}
         border="primary"
-        className="sc-bdVaJa hkKUQo"
+        className="sc-AxjAm jbFUXm"
       >
-        <Card
-          body={false}
-          border="primary"
-          className="sc-bdVaJa hkKUQo"
+        <div
+          className="sc-AxjAm jbFUXm card border-primary"
         >
-          <div
-            className="sc-bdVaJa hkKUQo card border-primary"
+          <PanelHeader
+            bg="primary"
           >
-            <PanelHeader
-              bg="primary"
+            <CardHeader
+              className="bg-primary text-white undefined"
             >
-              <CardHeader
-                className="bg-primary text-white undefined"
+              <div
+                className="bg-primary text-white undefined card-header"
               >
-                <div
-                  className="bg-primary text-white undefined card-header"
-                >
-                  Make your choice
-                </div>
-              </CardHeader>
-            </PanelHeader>
-            <a
-              href="/one"
-              key="one"
-            >
-              <styled.div>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
-                        "isStatic": false,
-                        "lastClassName": "iuVaGm",
-                        "rules": Array [
-                          "
-  display: flex;
-  padding-left: 1.25rem;
-  height: 40px;
-  align-items: center;
-
-  :hover { background-color: #e9ecef; }
-",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <div
-                    className="sc-bwzfXH iuVaGm"
-                  >
-                    Alpha
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </a>
-            <a
-              href="/two"
-              key="two"
-            >
-              <styled.div>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
-                        "isStatic": false,
-                        "lastClassName": "iuVaGm",
-                        "rules": Array [
-                          "
-  display: flex;
-  padding-left: 1.25rem;
-  height: 40px;
-  align-items: center;
-
-  :hover { background-color: #e9ecef; }
-",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <div
-                    className="sc-bwzfXH iuVaGm"
-                  >
-                    Betta
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </a>
-            <a
-              href="/three"
-              key="three"
-            >
-              <styled.div>
-                <StyledComponent
-                  forwardedComponent={
-                    Object {
-                      "$$typeof": Symbol(react.forward_ref),
-                      "attrs": Array [],
-                      "componentStyle": ComponentStyle {
-                        "componentId": "sc-bwzfXH",
-                        "isStatic": false,
-                        "lastClassName": "iuVaGm",
-                        "rules": Array [
-                          "
-  display: flex;
-  padding-left: 1.25rem;
-  height: 40px;
-  align-items: center;
-
-  :hover { background-color: #e9ecef; }
-",
-                        ],
-                      },
-                      "displayName": "styled.div",
-                      "foldedComponentIds": Array [],
-                      "render": [Function],
-                      "styledComponentId": "sc-bwzfXH",
-                      "target": "div",
-                      "toString": [Function],
-                      "warnTooManyClasses": [Function],
-                      "withComponent": [Function],
-                    }
-                  }
-                  forwardedRef={null}
-                >
-                  <div
-                    className="sc-bwzfXH iuVaGm"
-                  >
-                    Gamma
-                  </div>
-                </StyledComponent>
-              </styled.div>
-            </a>
-          </div>
-        </Card>
-      </CardWrapper>
-    </StyledComponent>
+                Make your choice
+              </div>
+            </CardHeader>
+          </PanelHeader>
+          <a
+            href="/one"
+            key="one"
+          >
+            <styled.div>
+              <div
+                className="sc-AxirZ jQtLth"
+              >
+                Alpha
+              </div>
+            </styled.div>
+          </a>
+          <a
+            href="/two"
+            key="two"
+          >
+            <styled.div>
+              <div
+                className="sc-AxirZ jQtLth"
+              >
+                Betta
+              </div>
+            </styled.div>
+          </a>
+          <a
+            href="/three"
+            key="three"
+          >
+            <styled.div>
+              <div
+                className="sc-AxirZ jQtLth"
+              >
+                Gamma
+              </div>
+            </styled.div>
+          </a>
+        </div>
+      </Card>
+    </CardWrapper>
   </Styled(CardWrapper)>
 </Choice>
 `;
