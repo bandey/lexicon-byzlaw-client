@@ -58,7 +58,7 @@ exports[`renders correct content 1`] = `
             ]
           }
         >
-          <Choice
+          <ChoiceWithFontPromo
             title="Choose"
             wrapLink={[Function]}
           >
@@ -116,7 +116,7 @@ exports[`renders correct content 1`] = `
                 </a>
               </LinkAnchor>
             </Link>
-          </Choice>
+          </ChoiceWithFontPromo>
         </AdapterChoice>
       </DataProvider>
     </ChoiceOpus>
