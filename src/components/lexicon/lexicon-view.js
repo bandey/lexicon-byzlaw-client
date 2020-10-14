@@ -7,7 +7,11 @@ import {Row, ColWord, ColCount} from './row/lexicon-row-styles.js';
 import LexiconList from './list/lexicon-list.js';
 import createLexiconRow from './row/lexicon-row-factory.js';
 
-function Lexicon({data}) {
+function Lexicon({data, WrapLink}) {
+  if (!WrapLink) {
+    WrapLink = ({children}) => children;
+  }
+
   const {t} = useTranslation();
 
   let headerRow, lexiconRow;
@@ -20,7 +24,7 @@ function Lexicon({data}) {
         <ColCount>{t('Qty2')}</ColCount>
       </Row>
     );
-    lexiconRow = createLexiconRow(data, 'c1', 'c2');
+    lexiconRow = createLexiconRow(data, 'c1', 'c2', WrapLink);
   } else { // 2 columns
     headerRow = (
       <Row noHover>
@@ -28,7 +32,7 @@ function Lexicon({data}) {
         <ColCount>{t('Qty')}</ColCount>
       </Row>
     );
-    lexiconRow = createLexiconRow(data, 'c', null);
+    lexiconRow = createLexiconRow(data, 'c', null, WrapLink);
   }
 
   return (

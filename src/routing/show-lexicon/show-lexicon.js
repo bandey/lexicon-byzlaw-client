@@ -1,26 +1,30 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
+import strictUriEncode from 'strict-uri-encode';
 
-import {StoreContext} from '../../store/store.js';
-import delLastElemFromURL from '../utils/del-last-elem-from-url.js';
-import {BriefPanel} from '../../components/panel/panel.js'
 import DataProvider from '../../data-provider/data-provider.js';
 import {getLexiconAlone} from '../../data-provider/data-provider-queries.js';
 import Lexicon from '../../components/lexicon/lexicon.js';
 
 function ShowLexicon({match}) {
-  const {opusName1} = useContext(StoreContext);
   const queryLexiconAlone = getLexiconAlone(match.params.id);
 
-  return (
-    <React.Fragment>
-      <Link to={delLastElemFromURL(match.url)}>
-        <BriefPanel>{opusName1}</BriefPanel>
+  function WrapLink({item, children}) {
+    return (
+      <Link key={item.w} to={`${match.url}/` + strictUriEncode(item.w)}>
+        {children}
       </Link>
-      <DataProvider query={queryLexiconAlone}>
-        {Lexicon}
-      </DataProvider>
-    </React.Fragment>
+    );
+  };
+
+  function AdapterChoice(props) {
+    return (<Lexicon WrapLink={WrapLink} {...props} />);
+  };
+
+  return (
+    <DataProvider query={queryLexiconAlone}>
+      {AdapterChoice}
+    </DataProvider>
   );
 };
 

@@ -5,7 +5,7 @@ import {Route, Link} from 'react-router-dom';
 import {StoreContext} from '../store/store.js';
 import {BriefPanel} from '../components/panel/panel.js'
 import ChoiceOpus from './choice-opus/choice-opus.js';
-import ShowLexicon from './show-lexicon/show-lexicon.js';
+import RouteAloneWord from './route-alone-word.js';
 
 function RouteAlone({match}) {
   const {t} = useTranslation();
@@ -27,7 +27,7 @@ function RouteAlone({match}) {
         <BriefPanel>{t('Ad fontes')}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceLexicon} />
-      <Route path={`${match.path}/:id`} component={ShowLexicon} />
+      <Route path={`${match.path}/:id`} component={RouteAloneWord} />
     </React.Fragment>
   );
 };

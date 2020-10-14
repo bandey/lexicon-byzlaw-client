@@ -132,19 +132,15 @@ exports[`renders correct content for 2 columns data 1`] = `
                         }
                       }
                     >
-                      <styled.div
-                        style={
+                      <WrapLink
+                        item={
                           Object {
-                            "height": 40,
-                            "left": 0,
-                            "position": "absolute",
-                            "top": 0,
-                            "width": "100%",
+                            "c": 1,
+                            "w": "one",
                           }
                         }
                       >
-                        <div
-                          className="sc-AxiKw fQaUdy"
+                        <styled.div
                           style={
                             Object {
                               "height": 40,
@@ -155,22 +151,35 @@ exports[`renders correct content for 2 columns data 1`] = `
                             }
                           }
                         >
-                          <styled.div>
-                            <div
-                              className="sc-AxhCb hnNexo"
-                            >
-                              one
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              1
-                            </div>
-                          </styled.div>
-                        </div>
-                      </styled.div>
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 0,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxhCb hnNexo"
+                              >
+                                one
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                1
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
                     </LexiconRow>
                     <LexiconRow
                       index={1}
@@ -185,19 +194,15 @@ exports[`renders correct content for 2 columns data 1`] = `
                         }
                       }
                     >
-                      <styled.div
-                        style={
+                      <WrapLink
+                        item={
                           Object {
-                            "height": 40,
-                            "left": 0,
-                            "position": "absolute",
-                            "top": 40,
-                            "width": "100%",
+                            "c": 2,
+                            "w": "two",
                           }
                         }
                       >
-                        <div
-                          className="sc-AxiKw fQaUdy"
+                        <styled.div
                           style={
                             Object {
                               "height": 40,
@@ -208,22 +213,35 @@ exports[`renders correct content for 2 columns data 1`] = `
                             }
                           }
                         >
-                          <styled.div>
-                            <div
-                              className="sc-AxhCb hnNexo"
-                            >
-                              two
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              2
-                            </div>
-                          </styled.div>
-                        </div>
-                      </styled.div>
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 40,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxhCb hnNexo"
+                              >
+                                two
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                2
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
                     </LexiconRow>
                     <LexiconRow
                       index={2}
@@ -238,19 +256,15 @@ exports[`renders correct content for 2 columns data 1`] = `
                         }
                       }
                     >
-                      <styled.div
-                        style={
+                      <WrapLink
+                        item={
                           Object {
-                            "height": 40,
-                            "left": 0,
-                            "position": "absolute",
-                            "top": 80,
-                            "width": "100%",
+                            "c": 3,
+                            "w": "three",
                           }
                         }
                       >
-                        <div
-                          className="sc-AxiKw fQaUdy"
+                        <styled.div
                           style={
                             Object {
                               "height": 40,
@@ -261,22 +275,35 @@ exports[`renders correct content for 2 columns data 1`] = `
                             }
                           }
                         >
-                          <styled.div>
-                            <div
-                              className="sc-AxhCb hnNexo"
-                            >
-                              three
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              3
-                            </div>
-                          </styled.div>
-                        </div>
-                      </styled.div>
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 80,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxhCb hnNexo"
+                              >
+                                three
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                3
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
                     </LexiconRow>
                   </div>
                 </div>
@@ -432,19 +459,16 @@ exports[`renders correct content for 3 columns data 1`] = `
                         }
                       }
                     >
-                      <styled.div
-                        style={
+                      <WrapLink
+                        item={
                           Object {
-                            "height": 40,
-                            "left": 0,
-                            "position": "absolute",
-                            "top": 0,
-                            "width": "100%",
+                            "c1": 1,
+                            "c2": 0,
+                            "w": "one",
                           }
                         }
                       >
-                        <div
-                          className="sc-AxiKw fQaUdy"
+                        <styled.div
                           style={
                             Object {
                               "height": 40,
@@ -455,29 +479,42 @@ exports[`renders correct content for 3 columns data 1`] = `
                             }
                           }
                         >
-                          <styled.div>
-                            <div
-                              className="sc-AxhCb hnNexo"
-                            >
-                              one
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              1
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              0
-                            </div>
-                          </styled.div>
-                        </div>
-                      </styled.div>
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 0,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxhCb hnNexo"
+                              >
+                                one
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                1
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                0
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
                     </LexiconRow>
                     <LexiconRow
                       index={1}
@@ -492,19 +529,16 @@ exports[`renders correct content for 3 columns data 1`] = `
                         }
                       }
                     >
-                      <styled.div
-                        style={
+                      <WrapLink
+                        item={
                           Object {
-                            "height": 40,
-                            "left": 0,
-                            "position": "absolute",
-                            "top": 40,
-                            "width": "100%",
+                            "c1": 0,
+                            "c2": 2,
+                            "w": "two",
                           }
                         }
                       >
-                        <div
-                          className="sc-AxiKw fQaUdy"
+                        <styled.div
                           style={
                             Object {
                               "height": 40,
@@ -515,29 +549,42 @@ exports[`renders correct content for 3 columns data 1`] = `
                             }
                           }
                         >
-                          <styled.div>
-                            <div
-                              className="sc-AxhCb hnNexo"
-                            >
-                              two
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              0
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              2
-                            </div>
-                          </styled.div>
-                        </div>
-                      </styled.div>
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 40,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxhCb hnNexo"
+                              >
+                                two
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                0
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                2
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
                     </LexiconRow>
                     <LexiconRow
                       index={2}
@@ -552,19 +599,16 @@ exports[`renders correct content for 3 columns data 1`] = `
                         }
                       }
                     >
-                      <styled.div
-                        style={
+                      <WrapLink
+                        item={
                           Object {
-                            "height": 40,
-                            "left": 0,
-                            "position": "absolute",
-                            "top": 80,
-                            "width": "100%",
+                            "c1": 2,
+                            "c2": 1,
+                            "w": "three",
                           }
                         }
                       >
-                        <div
-                          className="sc-AxiKw fQaUdy"
+                        <styled.div
                           style={
                             Object {
                               "height": 40,
@@ -575,29 +619,42 @@ exports[`renders correct content for 3 columns data 1`] = `
                             }
                           }
                         >
-                          <styled.div>
-                            <div
-                              className="sc-AxhCb hnNexo"
-                            >
-                              three
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              2
-                            </div>
-                          </styled.div>
-                          <styled.div>
-                            <div
-                              className="sc-AxhUy erRXhU"
-                            >
-                              1
-                            </div>
-                          </styled.div>
-                        </div>
-                      </styled.div>
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 80,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxhCb hnNexo"
+                              >
+                                three
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                2
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                1
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
                     </LexiconRow>
                   </div>
                 </div>
