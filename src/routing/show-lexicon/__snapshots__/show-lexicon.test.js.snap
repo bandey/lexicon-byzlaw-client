@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct content 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <ShowLexicon
+      match={
+        Object {
+          "params": Object {
+            "id": "lex",
+          },
+          "url": "/route/alone/lex",
+        }
+      }
+    >
+      <DataProvider
+        query={
+          Object {
+            "gql": "lexiconAlone(id: \\"lex\\") { w c }",
+            "name": "lexiconAlone",
+          }
+        }
+      >
+        <AdapterChoice
+          data={
+            Array [
+              Object {
+                "c": 1,
+                "w": "one",
+              },
+              Object {
+                "c": 2,
+                "w": "two",
+              },
+              Object {
+                "c": 3,
+                "w": "three",
+              },
+            ]
+          }
+        >
+          <Lexicon
+            WrapLink={[Function]}
+            data={
+              Array [
+                Object {
+                  "c": 1,
+                  "w": "one",
+                },
+                Object {
+                  "c": 2,
+                  "w": "two",
+                },
+                Object {
+                  "c": 3,
+                  "w": "three",
+                },
+              ]
+            }
+          >
+            <Link
+              key="one"
+              to="/route/alone/lex/one"
+            >
+              <LinkAnchor
+                href="/route/alone/lex/one"
+                navigate={[Function]}
+              >
+                <a
+                  href="/route/alone/lex/one"
+                  onClick={[Function]}
+                >
+                  1
+                </a>
+              </LinkAnchor>
+            </Link>
+            <Link
+              key="two"
+              to="/route/alone/lex/two"
+            >
+              <LinkAnchor
+                href="/route/alone/lex/two"
+                navigate={[Function]}
+              >
+                <a
+                  href="/route/alone/lex/two"
+                  onClick={[Function]}
+                >
+                  2
+                </a>
+              </LinkAnchor>
+            </Link>
+            <Link
+              key="three"
+              to="/route/alone/lex/three"
+            >
+              <LinkAnchor
+                href="/route/alone/lex/three"
+                navigate={[Function]}
+              >
+                <a
+                  href="/route/alone/lex/three"
+                  onClick={[Function]}
+                >
+                  3
+                </a>
+              </LinkAnchor>
+            </Link>
+          </Lexicon>
+        </AdapterChoice>
+      </DataProvider>
+    </ShowLexicon>
+  </Router>
+</BrowserRouter>
+`;
