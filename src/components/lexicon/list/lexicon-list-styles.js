@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-
 import {FixedSizeList} from 'react-window';
 
-const List = styled(FixedSizeList)`
-  font-family: PolyglotUnited, "Times New Roman", Times, serif;
-  font-size: larger;
-`;
+import {fontPolyglot} from '../../../styles/polyglot.js';
+
+const List = styled(FixedSizeList)`${fontPolyglot}`;
 
 export {List};

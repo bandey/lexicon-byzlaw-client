@@ -85,7 +85,7 @@ exports[`renders correct content for 2 columns data 1`] = `
               width="100%"
             >
               <List
-                className="sc-AxgMl ifIiLu"
+                className="sc-AxheI dybwrg"
                 direction="ltr"
                 height={120}
                 itemCount={3}
@@ -96,7 +96,7 @@ exports[`renders correct content for 2 columns data 1`] = `
                 width="100%"
               >
                 <div
-                  className="sc-AxgMl ifIiLu"
+                  className="sc-AxheI dybwrg"
                   onScroll={[Function]}
                   style={
                     Object {
@@ -412,7 +412,7 @@ exports[`renders correct content for 3 columns data 1`] = `
               width="100%"
             >
               <List
-                className="sc-AxgMl ifIiLu"
+                className="sc-AxheI dybwrg"
                 direction="ltr"
                 height={120}
                 itemCount={3}
@@ -423,7 +423,7 @@ exports[`renders correct content for 3 columns data 1`] = `
                 width="100%"
               >
                 <div
-                  className="sc-AxgMl ifIiLu"
+                  className="sc-AxheI dybwrg"
                   onScroll={[Function]}
                   style={
                     Object {
@@ -738,7 +738,7 @@ exports[`renders correct content for empty data 1`] = `
               width="100%"
             >
               <List
-                className="sc-AxgMl ifIiLu"
+                className="sc-AxheI dybwrg"
                 direction="ltr"
                 height={0}
                 itemCount={0}
@@ -749,7 +749,7 @@ exports[`renders correct content for empty data 1`] = `
                 width="100%"
               >
                 <div
-                  className="sc-AxgMl ifIiLu"
+                  className="sc-AxheI dybwrg"
                   onScroll={[Function]}
                   style={
                     Object {

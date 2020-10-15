@@ -3,7 +3,7 @@ import {Route, Link} from 'react-router-dom';
 
 import {StoreContext} from '../store/store.js';
 import delLastElemFromURL from './utils/del-last-elem-from-url.js';
-import {BriefPanel} from '../components/panel/panel.js'
+import {BriefPanel} from '../components/panel/panel.js';
 import ShowLexicon from './show-lexicon/show-lexicon.js';
 import ShowFoundChapters from './show-found-chapters/show-found-chapters.js';
 
