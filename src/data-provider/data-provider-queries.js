@@ -51,6 +51,13 @@ function getLexiconOperation(operation, id1, id2) {
   }
 };
 
+function getChaptersWithWord(word, opusId) {
+  return {
+    name: 'getChaptersWithWord',
+    gql: `getChaptersWithWord(word: "${word}", opusId: "${opusId}") { opus name }`,
+  };
+};
+
 export {
   getOpusAll, 
   getLexiconIntegral, 
@@ -59,4 +66,5 @@ export {
   getLexiconDisjunction,
   getLexiconAbjunction,
   getLexiconOperation,
+  getChaptersWithWord,
 };

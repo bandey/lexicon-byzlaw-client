@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Row, ColWord, ColCount} from './lexicon-row-styles.js';
+import {Row, ColWord, ColCount, ColOpus, ColChapter} from './lexicon-row-styles.js';
 
 function createLexiconRow(data, c1, c2, WrapLink) {
   return function LexiconRow({index, style}) {
@@ -23,4 +23,22 @@ function createLexiconRow(data, c1, c2, WrapLink) {
   };
 };
 
-export default createLexiconRow;
+function createFoundChaptersRow(data, WrapLink) {
+  return function FoundChaptersRow({index, style}) {
+    const row = data[index];
+    if (!row) {
+      return null;
+    };
+
+    return (
+      <WrapLink item={row}>
+        <Row style={style}>
+          <ColOpus>{row.opus}</ColOpus>
+          <ColChapter>{row.name}</ColChapter>
+        </Row>
+      </WrapLink>
+    );
+  };
+};
+
+export {createLexiconRow, createFoundChaptersRow};

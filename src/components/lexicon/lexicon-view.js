@@ -3,9 +3,11 @@ import {useTranslation} from 'react-i18next';
 
 import {Panel} from '../panel/panel.js';
 import {PanelHeaderForList} from './lexicon-styles.js';
-import {Row, ColWord, ColCount} from './row/lexicon-row-styles.js';
+import {Row, ColWord, ColCount, ColOpus, ColChapter} 
+  from './row/lexicon-row-styles.js';
 import LexiconList from './list/lexicon-list.js';
-import createLexiconRow from './row/lexicon-row-factory.js';
+import {createLexiconRow, createFoundChaptersRow} 
+  from './row/lexicon-row-factory.js';
 
 function Lexicon({data, WrapLink}) {
   if (!WrapLink) {
@@ -16,7 +18,7 @@ function Lexicon({data, WrapLink}) {
 
   let headerRow, lexiconRow;
 
-  if ((data) && (data[0]) && ((data[0].c1) || (data[0].c2))) { // 3 columns
+  if ((data) && (data[0]) && ((data[0].c1) || (data[0].c2))) { // 3 columns lexicon
     headerRow = (
       <Row noHover>
         <ColWord>{t('Word')}</ColWord>
@@ -25,7 +27,15 @@ function Lexicon({data, WrapLink}) {
       </Row>
     );
     lexiconRow = createLexiconRow(data, 'c1', 'c2', WrapLink);
-  } else { // 2 columns
+  } else if ((data) && (data[0]) && (data[0].opus)) { // 2 columns found chapters
+    headerRow = (
+      <Row noHover>
+        <ColOpus>{t('Source')}</ColOpus>
+        <ColChapter>{t('Chapter')}</ColChapter>
+      </Row>
+    );
+    lexiconRow = createFoundChaptersRow(data, WrapLink);
+  } else { // 2 columns lexicon
     headerRow = (
       <Row noHover>
         <ColWord>{t('Word')}</ColWord>
