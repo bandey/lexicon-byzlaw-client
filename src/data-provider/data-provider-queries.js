@@ -52,10 +52,11 @@ function getLexiconOperation(operation, id1, id2) {
 };
 
 function getChaptersWithWord(word, opusId) {
+  const params = opusId ? `, opusId: "${opusId}"` : '';
   return {
     name: 'getChaptersWithWord',
-    gql: `getChaptersWithWord(word: "${word}", opusId: "${opusId}") { opus name }`,
-  };
+    gql: `getChaptersWithWord(word: "${word}"${params}) {opus name}`,
+  }; 
 };
 
 export {

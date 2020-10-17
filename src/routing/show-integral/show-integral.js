@@ -1,28 +1,30 @@
-import React, {useContext} from 'react';
-import {useTranslation} from 'react-i18next';
+import React from 'react';
 import {Link} from 'react-router-dom';
+import strictUriEncode from 'strict-uri-encode';
 
-import {StoreContext} from '../../store/store.js';
-import delLastElemFromURL from '../utils/del-last-elem-from-url.js';
-import {BriefPanel} from '../../components/panel/panel.js'
 import DataProvider from '../../data-provider/data-provider.js';
 import {getLexiconIntegral} from '../../data-provider/data-provider-queries.js';
 import Lexicon from '../../components/lexicon/lexicon.js';
 
 function ShowIntegral({match}) {
-  const {t} = useTranslation();
-  const {linguaId} = useContext(StoreContext);
   const queryLexiconIntegral = getLexiconIntegral(match.params.lingua);
 
-  return (
-    <React.Fragment>
-      <Link to={delLastElemFromURL(match.url)}>
-        <BriefPanel>{t(`$linguaNames.${linguaId}`)}</BriefPanel>
+  function WrapLink({item, children}) {
+    return (
+      <Link key={item.w} to={`${match.url}/` + strictUriEncode(item.w)}>
+        {children}
       </Link>
-      <DataProvider query={queryLexiconIntegral}>
-        {Lexicon}
-      </DataProvider>
-    </React.Fragment>
+    );
+  };
+
+  function AdapterChoice(props) {
+    return (<Lexicon WrapLink={WrapLink} {...props} />);
+  };
+
+  return (
+    <DataProvider query={queryLexiconIntegral}>
+      {AdapterChoice}
+    </DataProvider>
   );
 };
 

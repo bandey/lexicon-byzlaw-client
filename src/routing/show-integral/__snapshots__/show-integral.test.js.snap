@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correct content 1`] = `
+<BrowserRouter>
+  <Router
+    history={
+      Object {
+        "action": "POP",
+        "block": [Function],
+        "createHref": [Function],
+        "go": [Function],
+        "goBack": [Function],
+        "goForward": [Function],
+        "length": 1,
+        "listen": [Function],
+        "location": Object {
+          "hash": "",
+          "pathname": "/",
+          "search": "",
+          "state": undefined,
+        },
+        "push": [Function],
+        "replace": [Function],
+      }
+    }
+  >
+    <ShowIntegral
+      match={
+        Object {
+          "params": Object {
+            "lingua": "lat",
+          },
+          "url": "/route/integral/lat",
+        }
+      }
+    >
+      <DataProvider
+        query={
+          Object {
+            "gql": "lexiconIntegral(lingua: \\"lat\\") { w c }",
+            "name": "lexiconIntegral",
+          }
+        }
+      >
+        <AdapterChoice
+          data={
+            Array [
+              Object {
+                "c": 1,
+                "w": "one",
+              },
+              Object {
+                "c": 2,
+                "w": "two",
+              },
+              Object {
+                "c": 3,
+                "w": "three",
+              },
+            ]
+          }
+        >
+          <Lexicon
+            WrapLink={[Function]}
+            data={
+              Array [
+                Object {
+                  "c": 1,
+                  "w": "one",
+                },
+                Object {
+                  "c": 2,
+                  "w": "two",
+                },
+                Object {
+                  "c": 3,
+                  "w": "three",
+                },
+              ]
+            }
+          >
+            <Link
+              key="one"
+              to="/route/integral/lat/one"
+            >
+              <LinkAnchor
+                href="/route/integral/lat/one"
+                navigate={[Function]}
+              >
+                <a
+                  href="/route/integral/lat/one"
+                  onClick={[Function]}
+                >
+                  1
+                </a>
+              </LinkAnchor>
+            </Link>
+            <Link
+              key="two"
+              to="/route/integral/lat/two"
+            >
+              <LinkAnchor
+                href="/route/integral/lat/two"
+                navigate={[Function]}
+              >
+                <a
+                  href="/route/integral/lat/two"
+                  onClick={[Function]}
+                >
+                  2
+                </a>
+              </LinkAnchor>
+            </Link>
+            <Link
+              key="three"
+              to="/route/integral/lat/three"
+            >
+              <LinkAnchor
+                href="/route/integral/lat/three"
+                navigate={[Function]}
+              >
+                <a
+                  href="/route/integral/lat/three"
+                  onClick={[Function]}
+                >
+                  3
+                </a>
+              </LinkAnchor>
+            </Link>
+          </Lexicon>
+        </AdapterChoice>
+      </DataProvider>
+    </ShowIntegral>
+  </Router>
+</BrowserRouter>
+`;
