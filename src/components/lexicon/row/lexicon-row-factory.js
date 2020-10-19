@@ -33,7 +33,6 @@ function createFoundChaptersRow(data, WrapLink) {
     return (
       <WrapLink item={row}>
         <Row style={style}>
-          <ColOpus>{row.opus}</ColOpus>
           <ColChapter>{row.name}</ColChapter>
         </Row>
       </WrapLink>

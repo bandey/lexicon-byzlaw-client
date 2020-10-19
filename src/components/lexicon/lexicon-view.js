@@ -27,10 +27,9 @@ function Lexicon({data, WrapLink}) {
       </Row>
     );
     lexiconRow = createLexiconRow(data, 'c1', 'c2', WrapLink);
-  } else if ((data) && (data[0]) && (data[0].opus)) { // 2 columns found chapters
+  } else if ((data) && (data[0]) && (data[0].opus)) { // 1 column found chapters
     headerRow = (
       <Row noHover>
-        <ColOpus>{t('Source')}</ColOpus>
         <ColChapter>{t('Chapter')}</ColChapter>
       </Row>
     );

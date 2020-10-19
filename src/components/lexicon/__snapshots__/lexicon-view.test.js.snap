@@ -57,14 +57,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                     >
                       <styled.div>
                         <div
-                          className="sc-AxgMl jAzqjP"
-                        >
-                          Source
-                        </div>
-                      </styled.div>
-                      <styled.div>
-                        <div
-                          className="sc-AxheI laVMoh"
+                          className="sc-AxheI eUstbN"
                         >
                           Chapter
                         </div>
@@ -165,14 +158,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl jAzqjP"
-                              >
-                                one
-                              </div>
-                            </styled.div>
-                            <styled.div>
-                              <div
-                                className="sc-AxheI laVMoh"
+                                className="sc-AxheI eUstbN"
                               >
                                 one.1
                               </div>
@@ -227,14 +213,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl jAzqjP"
-                              >
-                                two
-                              </div>
-                            </styled.div>
-                            <styled.div>
-                              <div
-                                className="sc-AxheI laVMoh"
+                                className="sc-AxheI eUstbN"
                               >
                                 two.2
                               </div>
@@ -289,14 +268,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl jAzqjP"
-                              >
-                                three
-                              </div>
-                            </styled.div>
-                            <styled.div>
-                              <div
-                                className="sc-AxheI laVMoh"
+                                className="sc-AxheI eUstbN"
                               >
                                 three.3
                               </div>
