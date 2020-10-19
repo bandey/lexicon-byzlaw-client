@@ -79,54 +79,9 @@ exports[`renders correct content 1`] = `
               ]
             }
           >
-            <Link
-              key="one"
-              to="/route/integral/lat/one"
-            >
-              <LinkAnchor
-                href="/route/integral/lat/one"
-                navigate={[Function]}
-              >
-                <a
-                  href="/route/integral/lat/one"
-                  onClick={[Function]}
-                >
-                  1
-                </a>
-              </LinkAnchor>
-            </Link>
-            <Link
-              key="two"
-              to="/route/integral/lat/two"
-            >
-              <LinkAnchor
-                href="/route/integral/lat/two"
-                navigate={[Function]}
-              >
-                <a
-                  href="/route/integral/lat/two"
-                  onClick={[Function]}
-                >
-                  2
-                </a>
-              </LinkAnchor>
-            </Link>
-            <Link
-              key="three"
-              to="/route/integral/lat/three"
-            >
-              <LinkAnchor
-                href="/route/integral/lat/three"
-                navigate={[Function]}
-              >
-                <a
-                  href="/route/integral/lat/three"
-                  onClick={[Function]}
-                >
-                  3
-                </a>
-              </LinkAnchor>
-            </Link>
+            1
+            2
+            3
           </Lexicon>
         </AdapterChoice>
       </DataProvider>
