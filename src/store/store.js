@@ -7,6 +7,7 @@ function StoreProvider({children}) {
   const [opusName1, setOpusName1] = useState('');
   const [opusName2, setOpusName2] = useState('');
   const [operationId, setOperationId] = useState('');
+  const [chapterName, setChapterName] = useState('');
 
   return (
     <StoreContext.Provider
@@ -15,10 +16,12 @@ function StoreProvider({children}) {
         opusName1,
         opusName2,
         operationId,
+        chapterName,
         setLinguaId,
         setOpusName1,
         setOpusName2,
         setOperationId,
+        setChapterName,
       }}
     >
       {children}

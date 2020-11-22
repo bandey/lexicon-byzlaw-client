@@ -5,7 +5,7 @@ import {StoreContext} from '../store/store.js';
 import delLastElemFromURL from './utils/del-last-elem-from-url.js';
 import {BriefPanel} from '../components/panel/panel.js';
 import ShowLexicon from './show-lexicon/show-lexicon.js';
-import ShowFoundChapters from './show-found-chapters/show-found-chapters.js';
+import RouteChapters from './route-chapters.js';
 
 function RouteAloneWord({match}) {
   const {opusName1} = useContext(StoreContext);
@@ -16,7 +16,7 @@ function RouteAloneWord({match}) {
         <BriefPanel>{opusName1}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ShowLexicon} />
-      <Route path={`${match.path}/:word`} component={ShowFoundChapters} />
+      <Route path={`${match.path}/:word`} component={RouteChapters} />
     </React.Fragment>
   );
 };

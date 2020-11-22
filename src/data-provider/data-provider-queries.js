@@ -55,7 +55,7 @@ function getChaptersWithWord(word, opusId) {
   const params = opusId ? `, opusId: "${opusId}"` : '';
   return {
     name: 'getChaptersWithWord',
-    gql: `getChaptersWithWord(word: "${word}"${params}) {opus name}`,
+    gql: `getChaptersWithWord(word: "${word}"${params}) {id opus name}`,
   }; 
 };
 
