@@ -5,6 +5,9 @@ const fontPolyglot = `
   font-size: larger;
 `;
 
-const SpanPolyglot = styled.span`${fontPolyglot}`;
+const SpanPolyglot = styled.span`
+  ${fontPolyglot}
+  ${props => (props.wordWrap ? 'word-wrap: anywhere;': '')}
+`;
 
 export {fontPolyglot, SpanPolyglot};
