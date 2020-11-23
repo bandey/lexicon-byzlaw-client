@@ -11,9 +11,13 @@ function InfoChapterWord({data}) {
   return (    
     <Panel border="primary">
       <PanelBody>
-        Словник: {data.opus}<br />
-        Статья: <SpanPolyglot>{data.name}</SpanPolyglot><br />
-        Слово: <SpanPolyglot>{data.word}</SpanPolyglot><br />
+        <table>
+          <tbody>
+            <tr><td>Словник:</td><td>{data.opus}</td></tr>
+            <tr><td>Статья:</td><td><SpanPolyglot wordWrap>{data.name}</SpanPolyglot></td></tr>
+            <tr><td>Слово:</td><td><SpanPolyglot wordWrap>{data.word}</SpanPolyglot></td></tr>
+          </tbody>
+        </table>
         Количество: {data.count}
       </PanelBody>
     </Panel>
