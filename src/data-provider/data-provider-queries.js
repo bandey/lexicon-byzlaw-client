@@ -59,6 +59,14 @@ function getChaptersWithWord(word, opusId) {
   }; 
 };
 
+function getInfoChapterWithWord(chapterId, word) {
+  return {
+    name: 'infoChapterWithWord',
+    gql: `infoChapterWithWord(chapterId: ${chapterId}, word: "${word}") ` + 
+      '{opus name word count}',
+  }; 
+};
+
 export {
   getOpusAll, 
   getLexiconIntegral, 
@@ -68,4 +76,5 @@ export {
   getLexiconAbjunction,
   getLexiconOperation,
   getChaptersWithWord,
+  getInfoChapterWithWord,
 };
