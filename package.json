@@ -1,6 +1,6 @@
 {
   "name": "lexicon-byzlaw-client",
-  "version": "3.1.1",
+  "version": "4.0.0",
   "description": "Lexicon Byzantine Law and Acts - client part",
   "private": true,
   "author": "Dmitrii Kondratev <origbandey@gmail.com>",
