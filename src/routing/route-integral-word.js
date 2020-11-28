@@ -6,7 +6,7 @@ import {StoreContext} from '../store/store.js';
 import delLastElemFromURL from './utils/del-last-elem-from-url.js';
 import {BriefPanel} from '../components/panel/panel.js';
 import ShowIntegral from './show-integral/show-integral.js';
-import ShowFoundChapters from './show-found-chapters/show-found-chapters.js';
+import RouteChapters from './route-chapters.js';
 
 function RouteIntegralWord({match}) {
   const {t} = useTranslation();
@@ -18,7 +18,7 @@ function RouteIntegralWord({match}) {
         <BriefPanel>{t(`$linguaNames.${linguaId}`)}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ShowIntegral} />
-      <Route path={`${match.path}/:word`} component={ShowFoundChapters} />
+      <Route path={`${match.path}/:word`} component={RouteChapters} />
     </React.Fragment>
   );
 };

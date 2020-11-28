@@ -18,7 +18,6 @@ function ShowIntegral({match}) {
   };
 
   function AdapterChoice(props) {
-    const WrapLink = ({children}) => children;
     return (<Lexicon WrapLink={WrapLink} {...props} />);
   };
 
