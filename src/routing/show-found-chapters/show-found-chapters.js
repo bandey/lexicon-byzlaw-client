@@ -9,8 +9,10 @@ import Lexicon from '../../components/lexicon/lexicon.js';
 
 function ShowFoundChapters({match}) {
   const {setChapterName} = useContext(StoreContext);
-  const queryChaptersWithWord = 
-    getChaptersWithWord(match.params.word, match.params.id);
+
+  const opusIds = [];
+  if (match.params.id) opusIds.push(match.params.id);
+  const queryChaptersWithWord = getChaptersWithWord(match.params.word, opusIds);
 
   function WrapLink({item, children}) {
     const onClick = () => setChapterName(item.name);

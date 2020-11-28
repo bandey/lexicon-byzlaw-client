@@ -51,8 +51,8 @@ function getLexiconOperation(operation, id1, id2) {
   }
 };
 
-function getChaptersWithWord(word, opusId) {
-  const params = opusId ? `, opusId: "${opusId}"` : '';
+function getChaptersWithWord(word, opusIds) {
+  const params = opusIds ? `, opusIds: ${JSON.stringify(opusIds)}` : '';
   return {
     name: 'getChaptersWithWord',
     gql: `getChaptersWithWord(word: "${word}"${params}) {id opus name}`,
