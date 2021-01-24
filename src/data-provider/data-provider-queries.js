@@ -63,7 +63,7 @@ function getInfoChapterWithWord(chapterId, word) {
   return {
     name: 'infoChapterWithWord',
     gql: `infoChapterWithWord(chapterId: ${chapterId}, word: "${word}") ` + 
-      '{opus name word count}',
+      '{opus word fragments {name count}}',
   }; 
 };
 

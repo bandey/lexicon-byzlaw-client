@@ -15,6 +15,23 @@ function ShowChapterWord({match}) {
   const queryInfoChapterWithWord = 
     getInfoChapterWithWord(match.params.chapter_id, match.params.word);
 
+  function InspectFragments({data}) {
+    if (!data || !data.fragments || !data.fragments.length) {
+      return null;
+    }
+
+    if (data.fragments.length == 1) {
+      return (<InfoChapterWord data={{
+        opus: data.opus,
+        word: data.word,
+        name: data.fragments[0].name,
+        count: data.fragments[0].count,
+      }} />);
+    } else {
+      return (<div>Many</div>);
+    }
+  };
+
   return (
     <React.Fragment>
       <Link to={delLastElemFromURL(match.url)}>
@@ -23,7 +40,7 @@ function ShowChapterWord({match}) {
         </BriefPanel>
       </Link>
       <DataProvider query={queryInfoChapterWithWord}>
-        {InfoChapterWord}
+        {InspectFragments}
       </DataProvider>
     </React.Fragment>
   );
