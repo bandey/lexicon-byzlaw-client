@@ -21,14 +21,10 @@ const ColCount = styled.div`
   text-align: center;
 `;
 
-const ColOpus = styled.div`
-  width: 50%;
-  text-align: left;
-`;
-
 const ColChapter = styled.div`
-  width: 100%;
+  width: 78%;
+  flex-grow: 1;
   text-align: left;
 `;
 
-export {Row, ColWord, ColCount, ColOpus, ColChapter};
+export {Row, ColWord, ColCount, ColChapter};

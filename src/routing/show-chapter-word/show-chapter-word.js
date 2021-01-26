@@ -9,6 +9,7 @@ import {BriefPanel} from '../../components/panel/panel.js';
 import {SpanPolyglot} from '../../styles/polyglot.js';
 import InfoChapterWord from 
   '../../components/info-chapter-word/info-chapter-word.js';
+import Lexicon from '../../components/lexicon/lexicon.js';
 
 function ShowChapterWord({match}) {
   const {chapterName} = useContext(StoreContext);
@@ -20,6 +21,15 @@ function ShowChapterWord({match}) {
       return null;
     }
 
+    function WrapLink({item, children}) {
+      const onClick = () => console.log(item.name);
+      return (
+        <Link key={item.name} to={`${match.url}/${item.name}`} onClick={onClick}>
+          {children}
+        </Link>
+      );
+    };
+
     if (data.fragments.length == 1) {
       return (<InfoChapterWord data={{
         opus: data.opus,
@@ -28,7 +38,7 @@ function ShowChapterWord({match}) {
         count: data.fragments[0].count,
       }} />);
     } else {
-      return (<div>Many</div>);
+     return (<Lexicon WrapLink={WrapLink} data={data.fragments} />);
     }
   };
 

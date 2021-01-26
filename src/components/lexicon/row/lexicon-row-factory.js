@@ -30,10 +30,13 @@ function createFoundChaptersRow(data, WrapLink) {
       return null;
     };
 
+    const colCount = row.count ? (<ColCount>{row.count}</ColCount>) : null;
+
     return (
       <WrapLink item={row}>
         <Row style={style}>
           <ColChapter>{row.name}</ColChapter>
+          {colCount}
         </Row>
       </WrapLink>
     );
