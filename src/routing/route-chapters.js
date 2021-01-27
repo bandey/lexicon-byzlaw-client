@@ -5,7 +5,7 @@ import delLastElemFromURL from './utils/del-last-elem-from-url.js';
 import {BriefPanel} from '../components/panel/panel.js';
 import {SpanPolyglot} from '../styles/polyglot.js';
 import ShowFoundChapters from './show-found-chapters/show-found-chapters.js';
-import ShowChapterWord from './show-chapter-word/show-chapter-word.js';
+import RouteFragments from './route-fragments.js';
 
 function RouteChapters({match}) {
   return (
@@ -16,7 +16,7 @@ function RouteChapters({match}) {
         </BriefPanel>
       </Link>
       <Route exact path={match.path} component={ShowFoundChapters} />
-      <Route path={`${match.path}/:chapter_id`} component={ShowChapterWord} />
+      <Route path={`${match.path}/:chapter_id`} component={RouteFragments} />
     </React.Fragment>
   );
 };
