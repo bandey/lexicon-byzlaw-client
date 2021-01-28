@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
 
+import {StoreContext} from '../../store/store.js';
 import DataProvider from '../../data-provider/data-provider.js';
 import {getInfoChapterWithWord} from '../../data-provider/data-provider-queries.js';
 import InfoChapterWord from 
@@ -8,6 +9,7 @@ import InfoChapterWord from
 import Lexicon from '../../components/lexicon/lexicon.js';
 
 function ShowChapterWord({match}) {
+  const {setFragmOpus, setFragmCount} = useContext(StoreContext);
   const queryInfoChapterWithWord = 
     getInfoChapterWithWord(match.params.chapter_id, match.params.word);
 
@@ -17,7 +19,7 @@ function ShowChapterWord({match}) {
     }
 
     function WrapLink({item, children}) {
-      const onClick = () => console.log(item.name);
+      const onClick = () => { setFragmOpus(data.opus); setFragmCount(item.count); };
       return (
         <Link key={item.name} to={`${match.url}/${item.name}`} onClick={onClick}>
           {children}
