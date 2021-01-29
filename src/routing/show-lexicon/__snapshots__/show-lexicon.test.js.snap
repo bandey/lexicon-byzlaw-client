@@ -78,6 +78,7 @@ exports[`renders correct content 1`] = `
                 },
               ]
             }
+            mode="lexicon2"
           >
             <Link
               key="one"

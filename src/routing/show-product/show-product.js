@@ -23,7 +23,7 @@ function ShowProduct({match}) {
   };
 
   function AdapterChoice(props) {
-    return (<Lexicon WrapLink={WrapLink} {...props} />);
+    return (<Lexicon mode='lexicon3' WrapLink={WrapLink} {...props} />);
   };
 
   return (

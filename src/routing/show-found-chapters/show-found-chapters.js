@@ -26,7 +26,7 @@ function ShowFoundChapters({match}) {
   };
 
   function AdapterChoice(props) {
-    return (<Lexicon WrapLink={WrapLink} {...props} />);
+    return (<Lexicon mode='chapters1' WrapLink={WrapLink} {...props} />);
   };
 
   return (

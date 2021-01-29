@@ -23,14 +23,14 @@ function createLexiconRow(data, c1, c2, WrapLink) {
   };
 };
 
-function createFoundChaptersRow(data, WrapLink) {
+function createFoundChaptersRow(data, cC, WrapLink) {
   return function FoundChaptersRow({index, style}) {
     const row = data[index];
     if (!row) {
       return null;
     };
 
-    const colCount = row.count ? (<ColCount>{row.count}</ColCount>) : null;
+    const colCount = cC ? (<ColCount>{row.count}</ColCount>) : null;
 
     return (
       <WrapLink item={row}>

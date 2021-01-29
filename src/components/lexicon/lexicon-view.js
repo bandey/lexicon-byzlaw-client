@@ -9,7 +9,7 @@ import LexiconList from './list/lexicon-list.js';
 import {createLexiconRow, createFoundChaptersRow} 
   from './row/lexicon-row-factory.js';
 
-function Lexicon({data, WrapLink}) {
+function Lexicon({data, WrapLink, mode}) {
   if (!data) return null;
 
   if (!WrapLink) {
@@ -20,22 +20,22 @@ function Lexicon({data, WrapLink}) {
 
   let headerRow, lexiconRow;
 
-  if ((data[0]) && (data[0].name) && (data[0].count)) { // 2 column found chapters
+  if (mode === 'chapters2') { // 2 columns found chapters
     headerRow = (
       <Row noHover>
         <ColChapter>{t('Chapter')}</ColChapter>
         <ColCount>{t('Qty')}</ColCount>
       </Row>
     );
-    lexiconRow = createFoundChaptersRow(data, WrapLink);
-  } else if ((data[0]) && (data[0].name)) { // 1 column found chapters
+    lexiconRow = createFoundChaptersRow(data, 'count', WrapLink);
+  } else if (mode === 'chapters1') { // 1 column found chapters
     headerRow = (
       <Row noHover>
         <ColChapter>{t('Chapter')}</ColChapter>
       </Row>
     );
-    lexiconRow = createFoundChaptersRow(data, WrapLink);
-  } else if ((data[0]) && ((data[0].c1) || (data[0].c2))) { // 3 columns lexicon
+    lexiconRow = createFoundChaptersRow(data, null, WrapLink);
+  } else if (mode === 'lexicon3') { // 3 columns lexicon
     headerRow = (
       <Row noHover>
         <ColWord>{t('Word')}</ColWord>
@@ -44,7 +44,7 @@ function Lexicon({data, WrapLink}) {
       </Row>
     );
     lexiconRow = createLexiconRow(data, 'c1', 'c2', WrapLink);
-  } else { // 2 columns lexicon
+  } else if (mode === 'lexicon2') { // 2 columns lexicon
     headerRow = (
       <Row noHover>
         <ColWord>{t('Word')}</ColWord>
@@ -52,6 +52,8 @@ function Lexicon({data, WrapLink}) {
       </Row>
     );
     lexiconRow = createLexiconRow(data, 'c', null, WrapLink);
+  } else { // unknown
+    return null;
   }
 
   return (

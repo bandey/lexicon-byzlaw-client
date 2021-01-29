@@ -18,7 +18,7 @@ function ShowLexicon({match}) {
   };
 
   function AdapterChoice(props) {
-    return (<Lexicon WrapLink={WrapLink} {...props} />);
+    return (<Lexicon mode='lexicon2' WrapLink={WrapLink} {...props} />);
   };
 
   return (

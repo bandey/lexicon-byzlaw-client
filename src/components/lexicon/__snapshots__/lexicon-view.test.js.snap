@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correct content for 2 columns found chapters 1`] = `
+exports[`renders correct content for 1 column found chapters 1`] = `
 <Lexicon
   data={
     Array [
@@ -18,6 +18,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
       },
     ]
   }
+  mode="chapters1"
 >
   <Styled(CardWrapper)
     border="primary"
@@ -57,7 +58,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                     >
                       <styled.div>
                         <div
-                          className="sc-AxheI eUstbN"
+                          className="sc-AxgMl ljswtE"
                         >
                           Chapter
                         </div>
@@ -78,7 +79,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
               width="100%"
             >
               <List
-                className="sc-AxmLO kCFQkO"
+                className="sc-Axmtr cDzmFj"
                 direction="ltr"
                 height={120}
                 itemCount={3}
@@ -89,7 +90,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                 width="100%"
               >
                 <div
-                  className="sc-AxmLO kCFQkO"
+                  className="sc-Axmtr cDzmFj"
                   onScroll={[Function]}
                   style={
                     Object {
@@ -158,7 +159,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxheI eUstbN"
+                                className="sc-AxgMl ljswtE"
                               >
                                 one.1
                               </div>
@@ -213,7 +214,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxheI eUstbN"
+                                className="sc-AxgMl ljswtE"
                               >
                                 two.2
                               </div>
@@ -268,9 +269,327 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxheI eUstbN"
+                                className="sc-AxgMl ljswtE"
                               >
                                 three.3
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
+                    </FoundChaptersRow>
+                  </div>
+                </div>
+              </List>
+            </Styled(List)>
+          </LexiconList>
+        </div>
+      </Card>
+    </CardWrapper>
+  </Styled(CardWrapper)>
+</Lexicon>
+`;
+
+exports[`renders correct content for 2 columns found chapters 1`] = `
+<Lexicon
+  data={
+    Array [
+      Object {
+        "count": 1,
+        "name": "one.1",
+      },
+      Object {
+        "count": 0,
+        "name": "two.2",
+      },
+      Object {
+        "count": 2,
+        "name": "three.3",
+      },
+    ]
+  }
+  mode="chapters2"
+>
+  <Styled(CardWrapper)
+    border="primary"
+    squareCorner={true}
+  >
+    <CardWrapper
+      border="primary"
+      className="sc-AxjAm cBrofV"
+      squareCorner={true}
+    >
+      <Card
+        body={false}
+        border="primary"
+        className="sc-AxjAm cBrofV"
+      >
+        <div
+          className="sc-AxjAm cBrofV card border-primary"
+        >
+          <Styled(PanelHeader)
+            bg="primary"
+          >
+            <PanelHeader
+              bg="primary"
+              className="sc-AxirZ KLmEG"
+            >
+              <CardHeader
+                className="bg-primary text-white sc-AxirZ KLmEG"
+              >
+                <div
+                  className="bg-primary text-white sc-AxirZ KLmEG card-header"
+                >
+                  <styled.div
+                    noHover={true}
+                  >
+                    <div
+                      className="sc-AxiKw JqPCR"
+                    >
+                      <styled.div>
+                        <div
+                          className="sc-AxgMl ljswtE"
+                        >
+                          Chapter
+                        </div>
+                      </styled.div>
+                      <styled.div>
+                        <div
+                          className="sc-AxhUy erRXhU"
+                        >
+                          Qty
+                        </div>
+                      </styled.div>
+                    </div>
+                  </styled.div>
+                </div>
+              </CardHeader>
+            </PanelHeader>
+          </Styled(PanelHeader)>
+          <LexiconList
+            itemCount={3}
+          >
+            <Styled(List)
+              height={120}
+              itemCount={3}
+              itemSize={40}
+              width="100%"
+            >
+              <List
+                className="sc-Axmtr cDzmFj"
+                direction="ltr"
+                height={120}
+                itemCount={3}
+                itemSize={40}
+                layout="vertical"
+                overscanCount={2}
+                useIsScrolling={false}
+                width="100%"
+              >
+                <div
+                  className="sc-Axmtr cDzmFj"
+                  onScroll={[Function]}
+                  style={
+                    Object {
+                      "WebkitOverflowScrolling": "touch",
+                      "direction": "ltr",
+                      "height": 120,
+                      "overflow": "auto",
+                      "position": "relative",
+                      "width": "100%",
+                      "willChange": "transform",
+                    }
+                  }
+                >
+                  <div
+                    style={
+                      Object {
+                        "height": 120,
+                        "pointerEvents": undefined,
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <FoundChaptersRow
+                      index={0}
+                      key="0"
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <WrapLink
+                        item={
+                          Object {
+                            "count": 1,
+                            "name": "one.1",
+                          }
+                        }
+                      >
+                        <styled.div
+                          style={
+                            Object {
+                              "height": 40,
+                              "left": 0,
+                              "position": "absolute",
+                              "top": 0,
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 0,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxgMl ljswtE"
+                              >
+                                one.1
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                1
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
+                    </FoundChaptersRow>
+                    <FoundChaptersRow
+                      index={1}
+                      key="1"
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 40,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <WrapLink
+                        item={
+                          Object {
+                            "count": 0,
+                            "name": "two.2",
+                          }
+                        }
+                      >
+                        <styled.div
+                          style={
+                            Object {
+                              "height": 40,
+                              "left": 0,
+                              "position": "absolute",
+                              "top": 40,
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 40,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxgMl ljswtE"
+                              >
+                                two.2
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                0
+                              </div>
+                            </styled.div>
+                          </div>
+                        </styled.div>
+                      </WrapLink>
+                    </FoundChaptersRow>
+                    <FoundChaptersRow
+                      index={2}
+                      key="2"
+                      style={
+                        Object {
+                          "height": 40,
+                          "left": 0,
+                          "position": "absolute",
+                          "top": 80,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <WrapLink
+                        item={
+                          Object {
+                            "count": 2,
+                            "name": "three.3",
+                          }
+                        }
+                      >
+                        <styled.div
+                          style={
+                            Object {
+                              "height": 40,
+                              "left": 0,
+                              "position": "absolute",
+                              "top": 80,
+                              "width": "100%",
+                            }
+                          }
+                        >
+                          <div
+                            className="sc-AxiKw fQaUdy"
+                            style={
+                              Object {
+                                "height": 40,
+                                "left": 0,
+                                "position": "absolute",
+                                "top": 80,
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <styled.div>
+                              <div
+                                className="sc-AxgMl ljswtE"
+                              >
+                                three.3
+                              </div>
+                            </styled.div>
+                            <styled.div>
+                              <div
+                                className="sc-AxhUy erRXhU"
+                              >
+                                2
                               </div>
                             </styled.div>
                           </div>
@@ -307,6 +626,7 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
       },
     ]
   }
+  mode="lexicon2"
 >
   <Styled(CardWrapper)
     border="primary"
@@ -374,7 +694,7 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
               width="100%"
             >
               <List
-                className="sc-AxmLO kCFQkO"
+                className="sc-Axmtr cDzmFj"
                 direction="ltr"
                 height={120}
                 itemCount={3}
@@ -385,7 +705,7 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                 width="100%"
               >
                 <div
-                  className="sc-AxmLO kCFQkO"
+                  className="sc-Axmtr cDzmFj"
                   onScroll={[Function]}
                   style={
                     Object {
@@ -627,6 +947,7 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
       },
     ]
   }
+  mode="lexicon3"
 >
   <Styled(CardWrapper)
     border="primary"
@@ -701,7 +1022,7 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
               width="100%"
             >
               <List
-                className="sc-AxmLO kCFQkO"
+                className="sc-Axmtr cDzmFj"
                 direction="ltr"
                 height={120}
                 itemCount={3}
@@ -712,7 +1033,7 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                 width="100%"
               >
                 <div
-                  className="sc-AxmLO kCFQkO"
+                  className="sc-Axmtr cDzmFj"
                   onScroll={[Function]}
                   style={
                     Object {
@@ -960,6 +1281,7 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
 exports[`renders correct content for empty data 1`] = `
 <Lexicon
   data={Array []}
+  mode="lexicon2"
 >
   <Styled(CardWrapper)
     border="primary"
@@ -1027,7 +1349,7 @@ exports[`renders correct content for empty data 1`] = `
               width="100%"
             >
               <List
-                className="sc-AxmLO kCFQkO"
+                className="sc-Axmtr cDzmFj"
                 direction="ltr"
                 height={0}
                 itemCount={0}
@@ -1038,7 +1360,7 @@ exports[`renders correct content for empty data 1`] = `
                 width="100%"
               >
                 <div
-                  className="sc-AxmLO kCFQkO"
+                  className="sc-Axmtr cDzmFj"
                   onScroll={[Function]}
                   style={
                     Object {

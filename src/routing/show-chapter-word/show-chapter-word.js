@@ -35,7 +35,7 @@ function ShowChapterWord({match}) {
         count: data.fragments[0].count,
       }} />);
     } else {
-     return (<Lexicon WrapLink={WrapLink} data={data.fragments} />);
+     return (<Lexicon mode='chapters2' data={data.fragments} WrapLink={WrapLink} />);
     }
   };
 
