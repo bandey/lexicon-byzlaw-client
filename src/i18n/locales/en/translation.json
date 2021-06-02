@@ -32,5 +32,8 @@
   "Qty2": "Qty2",
   "Source": "Source",
   "Chapter": "Chapter",
-  "Quantity": "Quantity"
+  "Quantity": "Quantity",
+  "Additions": "Additions",
+  "$Thesaurus url": "https://thesaurus.byzlaw.ru/?lang=en",
+  "$Thesaurus name": "Thesaurus «Byzantine Law and Acts»"
 }

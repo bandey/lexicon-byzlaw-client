@@ -3,6 +3,7 @@ import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 
 import Choice from '../../components/choice/choice.js';
+import AdditionsBoard from '../../components/additions-board/additions-board.js';
 
 function ChoiceMode() {
   const {t} = useTranslation();
@@ -16,13 +17,16 @@ function ChoiceMode() {
   };
 
   return (
-    <Choice title={t('Choose action')} wrapLink={wrapLink}>
-      {[
-        {id: 'integral', name: t('Integral lexicon')},
-        {id: 'alone', name: t('Ad fontes')},
-        {id: 'operations', name: t('Operations')},
-      ]}
-    </Choice>
+    <React.Fragment>
+      <Choice title={t('Choose action')} wrapLink={wrapLink}>
+        {[
+          {id: 'integral', name: t('Integral lexicon')},
+          {id: 'alone', name: t('Ad fontes')},
+          {id: 'operations', name: t('Operations')},
+        ]}
+      </Choice>
+      <AdditionsBoard />
+    </React.Fragment>
   );
 };
 

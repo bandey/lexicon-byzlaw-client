@@ -32,5 +32,8 @@
   "Qty2": "Кол2",
   "Source": "Источник",
   "Chapter": "Статья",
-  "Quantity": "Количество"
+  "Quantity": "Количество",
+  "Additions": "Дополнения",
+  "$Thesaurus url": "https://thesaurus.byzlaw.ru/?lang=ru",
+  "$Thesaurus name": "Тезаурус «Византийское право и акты»"  
 }
