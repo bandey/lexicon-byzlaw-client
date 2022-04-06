@@ -30,13 +30,15 @@ module.exports = {
       { from: './node_modules/bootstrap/dist/css/bootstrap.min.css', to: './styles/' },
       { from: './src/fonts/', to: './fonts/' },
       { from: './src/i18n/locales/', to: './locales/' },
+      { from: './src/public-scripts/', to: './scripts/' },
     ], { copyUnmodified: false }),
   ],
   devServer: {
     port: 8008,
     contentBase: path.join(__dirname, 'dist'),
     proxy: {
-      '/graphql/*': 'http://localhost:8080'
+      '/auth/*': 'http://localhost:8080',
+      '/graphql/*': 'http://localhost:8080',
     },
     hot: false
   }
