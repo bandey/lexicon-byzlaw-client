@@ -7,13 +7,14 @@ import {BriefPanel} from '../../components/panel/panel.js';
 import {SpanPolyglot} from '../../styles/polyglot.js';
 import InfoChapterWord from 
   '../../components/info-chapter-word/info-chapter-word.js';
+import ChoiceBonus from '../choice-bonus/choice-bonus.js';
 
 function ShowFragmentWord({match}) {
   const {fragmOpus, fragmCount} = useContext(StoreContext);
 
   return (
     <React.Fragment>
-      <Link to={delLastElemFromURL(match.url)}>
+      <Link to={delLastElemFromURL(delLastElemFromURL(match.url))}>
         <BriefPanel>
           <SpanPolyglot>{match.params.fragment_id}</SpanPolyglot>
         </BriefPanel>
@@ -24,6 +25,7 @@ function ShowFragmentWord({match}) {
         name: match.params.fragment_id,
         count: fragmCount,
       }} />
+      <ChoiceBonus match={match} />
     </React.Fragment>
   );
 };

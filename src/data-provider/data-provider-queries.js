@@ -67,6 +67,13 @@ function getInfoChapterWithWord(chapterId, word) {
   }; 
 };
 
+function getChapterContent(chapterId) {
+  return {
+    name: 'getChapterContent',
+    gql: `getChapterContent(id: ${chapterId})`,
+  }; 
+};
+
 export {
   getOpusAll, 
   getLexiconIntegral, 
@@ -77,4 +84,5 @@ export {
   getLexiconOperation,
   getChaptersWithWord,
   getInfoChapterWithWord,
+  getChapterContent,
 };

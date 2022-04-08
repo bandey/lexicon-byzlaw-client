@@ -7,6 +7,7 @@ import {getInfoChapterWithWord} from '../../data-provider/data-provider-queries.
 import InfoChapterWord from 
   '../../components/info-chapter-word/info-chapter-word.js';
 import Lexicon from '../../components/lexicon/lexicon.js';
+import ChoiceBonus from '../choice-bonus/choice-bonus.js';
 
 function ShowChapterWord({match}) {
   const {setFragmOpus, setFragmCount} = useContext(StoreContext);
@@ -21,19 +22,24 @@ function ShowChapterWord({match}) {
     function WrapLink({item, children}) {
       const onClick = () => { setFragmOpus(data.opus); setFragmCount(item.count); };
       return (
-        <Link key={item.name} to={`${match.url}/${item.name}`} onClick={onClick}>
+        <Link key={item.name} to={`${match.url}/fragments/${item.name}`} onClick={onClick}>
           {children}
         </Link>
       );
     };
 
     if (data.fragments.length == 1) {
-      return (<InfoChapterWord data={{
-        opus: data.opus,
-        word: data.word,
-        name: data.fragments[0].name,
-        count: data.fragments[0].count,
-      }} />);
+      return (
+        <React.Fragment>
+          <InfoChapterWord data={{
+            opus: data.opus,
+            word: data.word,
+            name: data.fragments[0].name,
+            count: data.fragments[0].count,
+          }} />
+          <ChoiceBonus match={match} />
+        </React.Fragment>
+      );
     } else {
      return (<Lexicon mode='chapters2' data={data.fragments} WrapLink={WrapLink} />);
     }
