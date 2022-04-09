@@ -9,6 +9,9 @@ function renderChildren(Children, dataName, t, {loading, error, data}) {
     return (<Alert variant="secondary">{t('$Loading')}</Alert>);
   }
   if (error) {
+    if (error.message === 'GraphQL error: Not logged in') {
+      return (<Alert variant="danger">{t('$Not logged in')}</Alert>);
+    }
     return (<Alert variant="danger">{t('$Error loading')}</Alert>);
   }
   return (

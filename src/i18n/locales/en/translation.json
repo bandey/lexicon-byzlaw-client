@@ -7,6 +7,7 @@
   "Exit": "Exit",
   "$Loading": "Loading...",
   "$Error loading": "Error loading data!",
+  "$Not logged in": "To view the content, you must log in",
   "Choose action": "Choose action",
   "Integral lexicon": "Integral lexicon",
   "Choose language": "Choose language of words",

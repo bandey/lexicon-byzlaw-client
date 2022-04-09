@@ -67,10 +67,12 @@ function getInfoChapterWithWord(chapterId, word) {
   }; 
 };
 
-function getChapterContent(chapterId) {
+function getChapterContent(chapterId, userEmail) {
+  const user = userEmail || "";
+  // param user is needed to requery after login/logout and to overcome apollo cache
   return {
     name: 'getChapterContent',
-    gql: `getChapterContent(id: ${chapterId})`,
+    gql: `getChapterContent(id: ${chapterId}, user: "${user}")`,
   }; 
 };
 
