@@ -19,7 +19,7 @@ function ShowChapterContent({match}) {
     return (
       <Panel border="primary">
         <PanelBody>
-          <SpanPolyglot>{data}</SpanPolyglot>
+          <SpanPolyglot whiteSpace>{data}</SpanPolyglot>
         </PanelBody>
       </Panel>
     );

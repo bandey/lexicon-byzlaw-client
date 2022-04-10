@@ -8,6 +8,7 @@ const fontPolyglot = `
 const SpanPolyglot = styled.span`
   ${fontPolyglot}
   ${props => (props.wordWrap ? 'word-wrap: anywhere;': '')}
+  ${props => (props.whiteSpace ? 'white-space: pre-wrap;': '')}
 `;
 
 export {fontPolyglot, SpanPolyglot};
