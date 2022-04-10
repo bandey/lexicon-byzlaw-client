@@ -15,10 +15,10 @@ function AppHeader() {
         <Title>{t('$Lexicons title')}</Title>
       </ColTitle>
       <ColLang md={2}>
-        <LangSelector />
+        <LoginButtom />
       </ColLang>
       <ColLang md={2}>
-        <LoginButtom />
+        <LangSelector />
       </ColLang>
     </Row>
   );

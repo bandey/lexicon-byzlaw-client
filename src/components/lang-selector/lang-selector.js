@@ -12,7 +12,8 @@ function LangSelector() {
   return (
     <Dropdown>
       <Dropdown.Toggle id="langSelector" variant="info" style={{'width': '100%'}}>
-        {t('$Language')}
+        &#127758;
+        {' ' + t('$LangShort')}
       </Dropdown.Toggle>
       <Dropdown.Menu style={{'width': '100%'}}>
         <Dropdown.Item as="button" onClick={() => changeLang('en')}>english</Dropdown.Item>
