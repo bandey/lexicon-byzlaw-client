@@ -6,7 +6,7 @@ import Button from 'react-bootstrap/Button';
 import {StoreContext} from '../../store/store.js';
 
 function LoginButton() {
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
   const {userEmail, setUserEmail} = useContext(StoreContext);
   const currentOrigin = window.location.protocol + '//' + window.location.host;
 
@@ -27,7 +27,8 @@ function LoginButton() {
   };
 
   function enterCabinet() {
-    window.open('/auth', '_blank').focus();
+    const lang = i18n.language.split('-')[0] || 'en';
+    window.open('/auth?lang=' + lang, '_blank').focus();
   };
 
   function exitCabinet() {
