@@ -15,7 +15,7 @@ function LangSelector() {
         &#127758;
         {' ' + t('$LangShort')}
       </Dropdown.Toggle>
-      <Dropdown.Menu style={{'width': '100%'}}>
+      <Dropdown.Menu style={{'min-width': '100%'}}>
         <Dropdown.Item as="button" onClick={() => changeLang('en')}>english</Dropdown.Item>
         <Dropdown.Item as="button" onClick={() => changeLang('ru')}>русский</Dropdown.Item>
       </Dropdown.Menu>

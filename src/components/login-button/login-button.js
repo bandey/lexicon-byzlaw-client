@@ -44,7 +44,7 @@ function LoginButton() {
         <Dropdown.Toggle id="cabinetButton" variant="info" style={{'width': '100%'}}>
           {t('Cabinet')}
         </Dropdown.Toggle>
-        <Dropdown.Menu style={{'width': '100%'}}>
+        <Dropdown.Menu style={{'min-width': '100%'}}>
           <Dropdown.Item as="button">{userEmail}</Dropdown.Item>
           <Dropdown.Item as="button" onClick={() => exitCabinet()}>{t('Exit')}</Dropdown.Item>
         </Dropdown.Menu>
