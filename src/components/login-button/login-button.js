@@ -10,6 +10,13 @@ function LoginButton() {
   const {userEmail, setUserEmail} = useContext(StoreContext);
   const currentOrigin = window.location.protocol + '//' + window.location.host;
 
+  useEffect(() => { // initial check: is user already authenticated or not
+    fetch('/auth/check', {headers: {'Accept': 'application/json'}})
+      .then(response => response.json())
+      .then(user => setUserEmail(user.email))
+      .catch(err => console.log(err));
+  }, []); // run an effect only once (on mount)
+
   useEffect(() => {
     window.addEventListener('message', handleMessageEvent);
     return () => {
@@ -27,8 +34,17 @@ function LoginButton() {
   };
 
   function enterCabinet() {
-    const lang = i18n.language.split('-')[0] || 'en';
-    window.open('/auth?lang=' + lang, '_blank').focus();
+    fetch('/auth/check', {headers: {'Accept': 'application/json'}})
+      .then(response => response.json())
+      .then(user => {
+        if (user && user.email) {
+          setUserEmail(user.email);
+        } else {
+          const lang = i18n.language.split('-')[0] || 'en';
+          window.open('/auth?lang=' + lang, '_blank').focus();
+        }
+      })
+      .catch(err => console.log(err));
   };
 
   function exitCabinet() {
