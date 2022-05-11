@@ -15,7 +15,7 @@ function RouteFragments({match}) {
   function ShowFragmentContent({match}) {
     return (
       <React.Fragment>
-        <Link to={delLastElemFromURL(delLastElemFromURL(delLastElemFromURL(match.url)))}>
+        <Link to={delLastElemFromURL(match.url, 3)}>
           <BriefPanel>
             <SpanPolyglot>{match.params.fragment_id}</SpanPolyglot>
           </BriefPanel>

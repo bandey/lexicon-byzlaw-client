@@ -14,7 +14,7 @@ function ShowFragmentWord({match}) {
 
   return (
     <React.Fragment>
-      <Link to={delLastElemFromURL(delLastElemFromURL(match.url))}>
+      <Link to={delLastElemFromURL(match.url, 2)}>
         <BriefPanel>
           <SpanPolyglot>{match.params.fragment_id}</SpanPolyglot>
         </BriefPanel>
