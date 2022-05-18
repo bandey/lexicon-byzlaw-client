@@ -9,7 +9,7 @@ import InfoChapterWord from
 import Lexicon from '../../components/lexicon/lexicon.js';
 import ChoiceBonus from '../choice-bonus/choice-bonus.js';
 
-function ShowChapterWord({match}) {
+function ChoiceFoundFragment({match}) {
   const {setFragmOpus, setFragmCount} = useContext(StoreContext);
   const queryInfoChapterWithWord = 
     getInfoChapterWithWord(match.params.chapter_id, match.params.word);
@@ -52,4 +52,4 @@ function ShowChapterWord({match}) {
   );
 };
 
-export default ShowChapterWord;
+export default ChoiceFoundFragment;

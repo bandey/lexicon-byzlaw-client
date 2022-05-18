@@ -5,11 +5,11 @@ import {StoreContext} from '../store/store.js';
 import delLastElemFromURL from './utils/del-last-elem-from-url.js';
 import {BriefPanel} from '../components/panel/panel.js';
 import {SpanPolyglot} from '../styles/polyglot.js';
-import ShowChapterWord from './show-chapter-word/show-chapter-word.js';
-import ShowFragmentWord from './show-fragment-word/show-fragment-word.js';
+import ChoiceFoundFragment from './choice-found-fragment/choice-found-fragment.js';
+import ShowFoundFragment from './show-found-fragment/show-found-fragment.js';
 import ShowChapterContent from './show-chapter-content/show-chapter-content.js';
 
-function RouteFragments({match}) {
+function RouteChapter({match}) {
   const {chapterName} = useContext(StoreContext);
   
   function ShowFragmentContent({match}) {
@@ -32,12 +32,12 @@ function RouteFragments({match}) {
           <SpanPolyglot>{chapterName}</SpanPolyglot>
         </BriefPanel>
       </Link>
-      <Route exact path={match.path} component={ShowChapterWord} />
+      <Route exact path={match.path} component={ChoiceFoundFragment} />
       <Route exact path={`${match.path}/content`} component={ShowChapterContent} />
-      <Route exact path={`${match.path}/fragments/:fragment_id`} component={ShowFragmentWord} />
+      <Route exact path={`${match.path}/fragments/:fragment_id`} component={ShowFoundFragment} />
       <Route exact path={`${match.path}/fragments/:fragment_id/content`} component={ShowFragmentContent} />
     </React.Fragment>
   );
 };
 
-export default RouteFragments;
+export default RouteChapter;

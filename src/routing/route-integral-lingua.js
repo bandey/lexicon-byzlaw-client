@@ -5,22 +5,22 @@ import {Route, Link} from 'react-router-dom';
 import {StoreContext} from '../store/store.js';
 import delLastElemFromURL from './utils/del-last-elem-from-url.js';
 import {BriefPanel} from '../components/panel/panel.js';
-import ShowProduct from './show-product/show-product.js';
-import RouteChapters from './route-chapters.js';
+import ShowIntegral from './show-integral/show-integral.js';
+import RouteWord from './route-word.js';
 
-function RouteIntegralWord({match}) {
+function RouteIntegralLingua({match}) {
   const {t} = useTranslation();
-  const {operationId} = useContext(StoreContext);
+  const {linguaId} = useContext(StoreContext);
 
   return (
     <React.Fragment>
       <Link to={delLastElemFromURL(match.url)}>
-        <BriefPanel>{t(`$operationNames.${operationId}`)}</BriefPanel>
+        <BriefPanel>{t(`$linguaNames.${linguaId}`)}</BriefPanel>
       </Link>
-      <Route exact path={match.path} component={ShowProduct} />
-      <Route path={`${match.path}/:word`} component={RouteChapters} />
+      <Route exact path={match.path} component={ShowIntegral} />
+      <Route path={`${match.path}/:word`} component={RouteWord} />
     </React.Fragment>
   );
 };
 
-export default RouteIntegralWord;
+export default RouteIntegralLingua;

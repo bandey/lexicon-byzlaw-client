@@ -1,13 +1,12 @@
 import React, {useContext} from 'react';
 import {Link} from 'react-router-dom';
-import strictUriEncode from 'strict-uri-encode';
 
 import {StoreContext} from '../../store/store.js';
 import DataProvider from '../../data-provider/data-provider.js';
 import {getChaptersWithWord} from '../../data-provider/data-provider-queries.js';
 import Lexicon from '../../components/lexicon/lexicon.js';
 
-function ShowFoundChapters({match}) {
+function ChoiceFoundChapters({match}) {
   const {setChapterName} = useContext(StoreContext);
 
   const opusIds = []; // empty array => search word through all opuses
@@ -36,4 +35,4 @@ function ShowFoundChapters({match}) {
   );
 };
 
-export default ShowFoundChapters;
+export default ChoiceFoundChapters;

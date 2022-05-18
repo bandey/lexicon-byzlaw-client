@@ -5,7 +5,7 @@ import {StoreContext} from '../store/store.js';
 import delLastElemFromURL from './utils/del-last-elem-from-url.js';
 import {BriefPanel} from '../components/panel/panel.js'
 import ChoiceOperation from './choice-operation/choice-operation.js';
-import RouteOperationsWord from './route-operations-word.js';
+import RouteOperationsOper from './route-operations-oper.js';
 
 function RouteOperationsId2({match}) {
   const {opusName2, setOperationId} = useContext(StoreContext);
@@ -25,7 +25,7 @@ function RouteOperationsId2({match}) {
         <BriefPanel>{`2: ${opusName2}`}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceOperationWrapper} />
-      <Route path={`${match.path}/:operation`} component={RouteOperationsWord} />
+      <Route path={`${match.path}/:operation`} component={RouteOperationsOper} />
     </React.Fragment>
   );
 };

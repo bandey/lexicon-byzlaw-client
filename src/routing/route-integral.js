@@ -5,7 +5,7 @@ import {Route, Link} from 'react-router-dom';
 import {StoreContext} from '../store/store.js';
 import {BriefPanel} from '../components/panel/panel.js'
 import ChoiceLingua from './choice-lingua/choice-lingua.js';
-import RouteIntegralWord from './route-integral-word.js';
+import RouteIntegralLingua from './route-integral-lingua.js';
 
 function RouteIntegral({match}) {
   const {t} = useTranslation();
@@ -27,7 +27,7 @@ function RouteIntegral({match}) {
         <BriefPanel>{t('Integral lexicon')}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceLinguaWrapper} />
-      <Route path={`${match.path}/:lingua`} component={RouteIntegralWord} />
+      <Route path={`${match.path}/:lingua`} component={RouteIntegralLingua} />
     </React.Fragment>
   );
 };

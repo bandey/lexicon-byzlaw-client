@@ -9,7 +9,7 @@ import InfoChapterWord from
   '../../components/info-chapter-word/info-chapter-word.js';
 import ChoiceBonus from '../choice-bonus/choice-bonus.js';
 
-function ShowFragmentWord({match}) {
+function ShowFoundFragment({match}) {
   const {fragmOpus, fragmCount} = useContext(StoreContext);
 
   return (
@@ -30,4 +30,4 @@ function ShowFragmentWord({match}) {
   );
 };
 
-export default ShowFragmentWord;
+export default ShowFoundFragment;
