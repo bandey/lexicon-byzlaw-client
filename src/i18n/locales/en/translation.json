@@ -9,6 +9,7 @@
   "$Loading": "Loading...",
   "$Error loading": "Error loading data!",
   "$Not logged in": "To view the content, you must log in",
+  "$Access denied": "This source is not publicly available. Please contact byzlaw@gmail.com to get access.",
   "Choose action": "Choose action",
   "Integral lexicon": "Integral lexicon",
   "Choose language": "Choose language of words",

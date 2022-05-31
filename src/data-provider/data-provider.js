@@ -12,6 +12,9 @@ function renderChildren(Children, dataName, t, {loading, error, data}) {
     if (error.message === 'GraphQL error: Not logged in') {
       return (<Alert variant="danger">{t('$Not logged in')}</Alert>);
     }
+    if (error.message === 'GraphQL error: Access denied') {
+      return (<Alert variant="danger">{t('$Access denied')}</Alert>);
+    }
     return (<Alert variant="danger">{t('$Error loading')}</Alert>);
   }
   return (
