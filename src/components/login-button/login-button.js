@@ -11,7 +11,7 @@ function LoginButton() {
   const currentOrigin = window.location.protocol + '//' + window.location.host;
 
   useEffect(() => { // initial check: is user already authenticated or not
-    fetch('/auth/check', {headers: {'Accept': 'application/json'}})
+    fetch('/auth/check', {headers: {'Accept': 'application/json'}, cache: 'no-store'})
       .then(response => response.json())
       .then(user => setUserEmail(user.email))
       .catch(err => console.log(err));
@@ -26,7 +26,7 @@ function LoginButton() {
 
   function handleMessageEvent(event) {
     if ((event.origin === currentOrigin) && (event.data === 'doneAuth')) {
-      fetch('/auth/check', {headers: {'Accept': 'application/json'}})
+      fetch('/auth/check', {headers: {'Accept': 'application/json'}, cache: 'no-store'})
         .then(response => response.json())
         .then(user => setUserEmail(user.email))
         .catch(err => console.log(err));
@@ -34,7 +34,7 @@ function LoginButton() {
   };
 
   function enterCabinet() {
-    fetch('/auth/check', {headers: {'Accept': 'application/json'}})
+    fetch('/auth/check', {headers: {'Accept': 'application/json'}, cache: 'no-store'})
       .then(response => response.json())
       .then(user => {
         if (user && user.email) {
@@ -48,7 +48,7 @@ function LoginButton() {
   };
 
   function exitCabinet() {
-    fetch('/auth/exit', {headers: {'Accept': 'application/json'}})
+    fetch('/auth/exit', {headers: {'Accept': 'application/json'}, cache: 'no-store'})
       .then(response => response.json())
       .then(user => setUserEmail(user.email))
       .catch(err => console.log(err));
