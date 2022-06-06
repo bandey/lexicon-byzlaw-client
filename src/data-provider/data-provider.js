@@ -13,7 +13,14 @@ function renderChildren(Children, dataName, t, {loading, error, data}) {
       return (<Alert variant="danger">{t('$Not logged in')}</Alert>);
     }
     if (error.message === 'GraphQL error: Access denied') {
-      return (<Alert variant="danger">{t('$Access denied')}</Alert>);
+      return (
+        <Alert variant="danger">
+          {t('$No access to content Beg') + ' '}
+          {t('$No access to content End') + ' '}
+          <a href={'mailto:' + t('$Leader mail')}>{t('Send mail')}</a>          
+          {' (' + t('$Leader mail') + ')'}
+        </Alert>
+      );
     }
     return (<Alert variant="danger">{t('$Error loading')}</Alert>);
   }
