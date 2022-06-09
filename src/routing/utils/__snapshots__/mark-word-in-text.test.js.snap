@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mark several words 1`] = `
+Array [
+  <styled.span
+    key="1"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       first 
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm hZjGXT"
+    >
+      middle
+    </span>
+  </styled.span>,
+  <styled.span
+    key="3"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       
+    </span>
+  </styled.span>,
+  <styled.span
+    key="4"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm hZjGXT"
+    >
+      middle
+    </span>
+  </styled.span>,
+  <styled.span
+    key="5"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       last 
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`mark word in first position 1`] = `
+Array [
+  <styled.span
+    key="1"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm hZjGXT"
+    >
+      first
+    </span>
+  </styled.span>,
+  <styled.span
+    key="3"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       last 
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`mark word in last position 1`] = `
+Array [
+  <styled.span
+    key="1"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       first 
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm hZjGXT"
+    >
+      last
+    </span>
+  </styled.span>,
+  <styled.span
+    key="3"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`mark word in middle position 1`] = `
+Array [
+  <styled.span
+    key="1"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       first 
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm hZjGXT"
+    >
+      middle
+    </span>
+  </styled.span>,
+  <styled.span
+    key="3"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxjAm xrrgJ"
+    >
+       last 
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`no marking, if word is not found 1`] = `
+<styled.span
+  key="1"
+  whiteSpace={true}
+>
+  <span
+    className="sc-AxjAm xrrgJ"
+  >
+     first last 
+  </span>
+</styled.span>
+`;
