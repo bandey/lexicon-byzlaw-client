@@ -7,7 +7,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        first 
     </span>
@@ -18,7 +18,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm hZjGXT"
+      className="sc-AxirZ fqKCtQ"
     >
       middle
     </span>
@@ -28,7 +28,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        
     </span>
@@ -39,7 +39,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm hZjGXT"
+      className="sc-AxirZ fqKCtQ"
     >
       middle
     </span>
@@ -49,7 +49,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        last 
     </span>
@@ -64,7 +64,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        
     </span>
@@ -75,7 +75,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm hZjGXT"
+      className="sc-AxirZ fqKCtQ"
     >
       first
     </span>
@@ -85,7 +85,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        last 
     </span>
@@ -100,7 +100,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        first 
     </span>
@@ -111,7 +111,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm hZjGXT"
+      className="sc-AxirZ fqKCtQ"
     >
       last
     </span>
@@ -121,7 +121,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        
     </span>
@@ -136,7 +136,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        first 
     </span>
@@ -147,7 +147,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm hZjGXT"
+      className="sc-AxirZ fqKCtQ"
     >
       middle
     </span>
@@ -157,7 +157,7 @@ Array [
     whiteSpace={true}
   >
     <span
-      className="sc-AxjAm xrrgJ"
+      className="sc-AxirZ llVYwu"
     >
        last 
     </span>
@@ -171,7 +171,7 @@ exports[`no marking, if word is not found 1`] = `
   whiteSpace={true}
 >
   <span
-    className="sc-AxjAm xrrgJ"
+    className="sc-AxirZ llVYwu"
   >
      first last 
   </span>

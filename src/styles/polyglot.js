@@ -1,8 +1,16 @@
 import styled from 'styled-components';
 
-const fontPolyglot = `
+const fontPolyglotSmall = `
   font-family: PolyglotUnited, "Times New Roman", Times, serif;
+`;
+
+const fontPolyglot = `
+  ${fontPolyglotSmall}
   font-size: larger;
+`;
+
+const SpanPolyglotSmall = styled.span`
+  ${fontPolyglotSmall}
 `;
 
 const SpanPolyglot = styled.span`
@@ -12,4 +20,4 @@ const SpanPolyglot = styled.span`
   ${props => (props.marked ? 'color: #E00000;': '')}
 `;
 
-export {fontPolyglot, SpanPolyglot};
+export {fontPolyglot, SpanPolyglot, SpanPolyglotSmall};
