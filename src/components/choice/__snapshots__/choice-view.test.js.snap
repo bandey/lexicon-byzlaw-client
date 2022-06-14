@@ -43,9 +43,13 @@ exports[`renders correct content 1`] = `
             >
               <styled.div>
                 <div
-                  className="sc-AxirZ jQtLth"
+                  className="sc-AxirZ nKlfR"
                 >
-                  Alpha
+                  <WrapItem
+                    index={0}
+                  >
+                    Alpha
+                  </WrapItem>
                 </div>
               </styled.div>
             </a>
@@ -55,9 +59,13 @@ exports[`renders correct content 1`] = `
             >
               <styled.div>
                 <div
-                  className="sc-AxirZ jQtLth"
+                  className="sc-AxirZ nKlfR"
                 >
-                  Betta
+                  <WrapItem
+                    index={1}
+                  >
+                    Betta
+                  </WrapItem>
                 </div>
               </styled.div>
             </a>
@@ -67,9 +75,13 @@ exports[`renders correct content 1`] = `
             >
               <styled.div>
                 <div
-                  className="sc-AxirZ jQtLth"
+                  className="sc-AxirZ nKlfR"
                 >
-                  Gamma
+                  <WrapItem
+                    index={2}
+                  >
+                    Gamma
+                  </WrapItem>
                 </div>
               </styled.div>
             </a>

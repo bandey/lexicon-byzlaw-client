@@ -5,6 +5,8 @@ const Row = styled.div`
   padding-left: 1.25rem;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
   ${props => (props.noHover ? null : `
     :hover { background-color: #e9ecef; }
   `)}

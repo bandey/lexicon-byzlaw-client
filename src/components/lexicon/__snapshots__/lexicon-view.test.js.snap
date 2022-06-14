@@ -54,7 +54,7 @@ exports[`renders correct content for 1 column found chapters 1`] = `
                     noHover={true}
                   >
                     <div
-                      className="sc-AxiKw JqPCR"
+                      className="sc-AxiKw bnsSPs"
                     >
                       <styled.div>
                         <div
@@ -146,7 +146,7 @@ exports[`renders correct content for 1 column found chapters 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -201,7 +201,7 @@ exports[`renders correct content for 1 column found chapters 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -256,7 +256,7 @@ exports[`renders correct content for 1 column found chapters 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -344,7 +344,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                     noHover={true}
                   >
                     <div
-                      className="sc-AxiKw JqPCR"
+                      className="sc-AxiKw bnsSPs"
                     >
                       <styled.div>
                         <div
@@ -443,7 +443,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -505,7 +505,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -567,7 +567,7 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -662,7 +662,7 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                     noHover={true}
                   >
                     <div
-                      className="sc-AxiKw JqPCR"
+                      className="sc-AxiKw bnsSPs"
                     >
                       <styled.div>
                         <div
@@ -761,7 +761,7 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -823,7 +823,7 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -885,7 +885,7 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -983,7 +983,7 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                     noHover={true}
                   >
                     <div
-                      className="sc-AxiKw JqPCR"
+                      className="sc-AxiKw bnsSPs"
                     >
                       <styled.div>
                         <div
@@ -1090,7 +1090,7 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -1160,7 +1160,7 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -1230,7 +1230,7 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                           }
                         >
                           <div
-                            className="sc-AxiKw fQaUdy"
+                            className="sc-AxiKw DQaAX"
                             style={
                               Object {
                                 "height": 40,
@@ -1317,7 +1317,7 @@ exports[`renders correct content for empty data 1`] = `
                     noHover={true}
                   >
                     <div
-                      className="sc-AxiKw JqPCR"
+                      className="sc-AxiKw bnsSPs"
                     >
                       <styled.div>
                         <div
