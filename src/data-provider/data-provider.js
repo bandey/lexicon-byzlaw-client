@@ -32,15 +32,12 @@ function renderChildren(Children, dataName, t, {loading, error, data}) {
 function DataProvider({children, query}) {
   const {t} = useTranslation();
 
+  let policy = query.policy ? {fetchPolicy: query.policy} : null;
+
   return (
     <Query
-      query={
-        gql`
-          query {
-            ${query.gql}
-          }
-        `
-      }
+      query={gql`query { ${query.gql} }`}
+      {...policy}
     >
       {renderChildren.bind(null, children, query.name, t)}
     </Query>
