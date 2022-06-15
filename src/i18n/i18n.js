@@ -48,8 +48,13 @@ function translateDocStuff(lang, t) {
   document.title = t('$Document title');
 };
 
+function extractLang(lang) {
+  return lang.split('-')[0]; // split ru-RU
+};
+
 export default i18next;
 export {
   languages,
   setupLanguage,
+  extractLang,
 };
