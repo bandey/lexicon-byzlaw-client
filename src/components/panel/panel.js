@@ -27,6 +27,9 @@ function PanelHeader({bg, children, className, ...props}) {
     case 'info':
       bgClass = 'bg-info text-white';
       break;
+    case 'light':
+      bgClass = 'bg-light';
+      break;
   }
   return (
     <Card.Header className={`${bgClass} ${className}`} {...props}>
