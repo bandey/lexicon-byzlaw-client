@@ -47,7 +47,9 @@ function LoginButton() {
           setUserEmail(user.email);
         } else {
           const lang = i18n.language.split('-')[0] || 'en';
-          window.open('/auth?lang=' + lang, '_blank').focus();
+          setTimeout(() => { // use setTimeout to avoid Safari blocking
+            window.open('/auth?lang=' + lang, '_blank').focus();
+          });
         }
       })
       .catch(err => console.log(err));
