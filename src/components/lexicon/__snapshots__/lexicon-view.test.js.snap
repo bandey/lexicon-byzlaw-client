@@ -1339,54 +1339,33 @@ exports[`renders correct content for empty data 1`] = `
               </CardHeader>
             </PanelHeader>
           </Styled(PanelHeader)>
-          <LexiconList
-            itemCount={0}
-          >
-            <Styled(List)
-              height={0}
-              itemCount={0}
-              itemSize={40}
-              width="100%"
+          <RowMessage>
+            <styled.div
+              noHover={true}
+              style={
+                Object {
+                  "height": "40px",
+                }
+              }
             >
-              <List
-                className="sc-AxmLO cbeSvm"
-                direction="ltr"
-                height={0}
-                itemCount={0}
-                itemSize={40}
-                layout="vertical"
-                overscanCount={2}
-                useIsScrolling={false}
-                width="100%"
-              >
-                <div
-                  className="sc-AxmLO cbeSvm"
-                  onScroll={[Function]}
-                  style={
-                    Object {
-                      "WebkitOverflowScrolling": "touch",
-                      "direction": "ltr",
-                      "height": 0,
-                      "overflow": "auto",
-                      "position": "relative",
-                      "width": "100%",
-                      "willChange": "transform",
-                    }
+              <div
+                className="sc-AxiKw bnsSPs"
+                style={
+                  Object {
+                    "height": "40px",
                   }
-                >
+                }
+              >
+                <styled.div>
                   <div
-                    style={
-                      Object {
-                        "height": 0,
-                        "pointerEvents": undefined,
-                        "width": "100%",
-                      }
-                    }
-                  />
-                </div>
-              </List>
-            </Styled(List)>
-          </LexiconList>
+                    className="sc-AxhCb hnNexo"
+                  >
+                    $No data
+                  </div>
+                </styled.div>
+              </div>
+            </styled.div>
+          </RowMessage>
         </div>
       </Card>
     </CardWrapper>

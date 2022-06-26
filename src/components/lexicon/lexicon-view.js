@@ -6,7 +6,7 @@ import {PanelHeaderForList} from './lexicon-styles.js';
 import {Row, ColWord, ColCount, ColChapter} 
   from './row/lexicon-row-styles.js';
 import LexiconList from './list/lexicon-list.js';
-import {createLexiconRow, createFoundChaptersRow} 
+import {createLexiconRow, createFoundChaptersRow, RowMessage} 
   from './row/lexicon-row-factory.js';
 
 function Lexicon({data, WrapLink, mode, title}) {
@@ -54,6 +54,17 @@ function Lexicon({data, WrapLink, mode, title}) {
     lexiconRow = createLexiconRow(data, 'c', null, WrapLink);
   } else { // unknown
     return null;
+  }
+
+  if (!data.length) {
+    return (
+      <Panel border="primary" squareCorner>
+        <PanelHeaderForList bg="primary">
+          {headerRow}
+        </PanelHeaderForList>
+        <RowMessage>{t('$No data')}</RowMessage>
+      </Panel>
+    );
   }
 
   return (

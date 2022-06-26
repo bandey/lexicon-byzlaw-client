@@ -2,6 +2,8 @@ import React from 'react';
 
 import {Row, ColWord, ColCount, ColOpus, ColChapter} from './lexicon-row-styles.js';
 
+const rowHeight = 40;
+
 function createLexiconRow(data, c1, c2, WrapLink) {
   return function LexiconRow({index, style}) {
     const row = data[index];
@@ -43,4 +45,12 @@ function createFoundChaptersRow(data, cC, WrapLink) {
   };
 };
 
-export {createLexiconRow, createFoundChaptersRow};
+function RowMessage({children}) {
+  return (
+    <Row style={{height: `${rowHeight}px`}} noHover>
+      <ColWord>{children}</ColWord>
+    </Row>
+  );
+};
+
+export {rowHeight, createLexiconRow, createFoundChaptersRow, RowMessage};

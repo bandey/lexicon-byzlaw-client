@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import {debounce} from 'debounce';
 
+import {rowHeight} from '../row/lexicon-row-factory.js';
 import {List} from './lexicon-list-styles.js';
 
 function LexiconList({itemCount, children}) {
-  const rowHeight = 40;
   const dataHeight = itemCount * rowHeight;
 
   function calcListHeight() {
