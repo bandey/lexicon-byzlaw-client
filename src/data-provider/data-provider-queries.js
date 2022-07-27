@@ -5,6 +5,13 @@ function getOpusAll() {
   };
 };
 
+function getChildRubrics(id) {
+  return {
+    name: 'getChildRubrics',
+    gql: `getChildRubrics(id: ${id}) { id name opusId }`,
+  };
+};
+
 function getLexiconIntegral(lingua) {
   const params = lingua ? `(lingua: "${lingua}")` : '';
   return {
@@ -77,7 +84,8 @@ function getChapterContent(chapterId, userEmail) {
 };
 
 export {
-  getOpusAll, 
+  getOpusAll,
+  getChildRubrics, 
   getLexiconIntegral, 
   getLexiconAlone, 
   getLexiconConjunction,

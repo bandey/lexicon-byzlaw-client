@@ -12,7 +12,7 @@ function RouteAloneOpus({match}) {
 
   return (
     <React.Fragment>
-      <Link to={delLastElemFromURL(match.url)}>
+      <Link to={delLastElemFromURL(match.url, 2)}>
         <BriefPanel>{opusName1}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ShowLexicon} />
