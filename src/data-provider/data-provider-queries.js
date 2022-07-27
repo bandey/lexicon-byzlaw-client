@@ -12,6 +12,13 @@ function getChildRubrics(id) {
   };
 };
 
+function getRubricName(id) {
+  return {
+    name: 'getRubricName',
+    gql: `getRubricName(id: ${id})`,
+  }; 
+};
+
 function getLexiconIntegral(lingua) {
   const params = lingua ? `(lingua: "${lingua}")` : '';
   return {
@@ -85,7 +92,8 @@ function getChapterContent(chapterId, userEmail) {
 
 export {
   getOpusAll,
-  getChildRubrics, 
+  getChildRubrics,
+  getRubricName,
   getLexiconIntegral, 
   getLexiconAlone, 
   getLexiconConjunction,
