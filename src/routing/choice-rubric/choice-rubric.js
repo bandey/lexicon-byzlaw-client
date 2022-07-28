@@ -2,15 +2,17 @@ import React, {useContext} from 'react';
 import {useTranslation} from 'react-i18next';
 import {Link} from 'react-router-dom';
 
+import {extractLang} from '../../i18n/i18n.js';
 import {StoreContext} from '../../store/store.js';
 import DataProvider from '../../data-provider/data-provider.js';
 import {getChildRubrics} from '../../data-provider/data-provider-queries.js';
 import Choice from '../../components/choice/choice.js';
 
 function ChoiceRubric({match}) {
-  const {t} = useTranslation();
+  const {t, i18n} = useTranslation();
   const {setOpusName1} = useContext(StoreContext);
-  const queryChildRubrics = getChildRubrics(match.params.rubric_id || 0);
+  const queryChildRubrics = 
+    getChildRubrics(match.params.rubric_id || 0, extractLang(i18n.language));
 
   function wrapLink(item, Child) {
     const opusId = item.opusId;

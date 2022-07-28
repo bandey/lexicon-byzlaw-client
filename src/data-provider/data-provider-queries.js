@@ -5,17 +5,19 @@ function getOpusAll() {
   };
 };
 
-function getChildRubrics(id) {
+function getChildRubrics(id, lang) {
   return {
     name: 'getChildRubrics',
-    gql: `getChildRubrics(id: ${id}) { id name opusId }`,
+    gql: `getChildRubrics(id: ${id}, lang: "${lang}") { id name opusId }`,
+    policy: 'no-cache',
   };
 };
 
-function getRubricName(id) {
+function getRubricName(id, lang) {
   return {
     name: 'getRubricName',
-    gql: `getRubricName(id: ${id})`,
+    gql: `getRubricName(id: ${id}, lang: "${lang}")`,
+    policy: 'no-cache',
   }; 
 };
 
