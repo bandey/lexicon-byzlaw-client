@@ -20,7 +20,7 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.mjs', '.js'],
   },
   plugins: [
     new CopyWebpackPlugin([
