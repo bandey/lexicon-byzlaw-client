@@ -16,7 +16,7 @@ function RouteWord({match}) {
         </BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceFoundChapter} />
-      <Route path={`${match.path}/:chapter_id`} component={RouteChapter} />
+      <Route path={`${match.path}/:chapterId`} component={RouteChapter} />
     </React.Fragment>
   );
 };

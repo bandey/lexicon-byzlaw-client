@@ -27,7 +27,7 @@ function RouteOperations({match}) {
         <BriefPanel>{t('Operations')}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceLexicon} />
-      <Route path={`${match.path}/:id1`} component={RouteOperationsId1} />
+      <Route path={`${match.path}/:opusId1`} component={RouteOperationsId1} />
     </React.Fragment>
   );
 };

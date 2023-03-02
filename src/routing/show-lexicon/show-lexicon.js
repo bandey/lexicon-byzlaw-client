@@ -7,7 +7,7 @@ import {getLexiconAlone} from '../../data-provider/data-provider-queries.js';
 import Lexicon from '../../components/lexicon/lexicon.js';
 
 function ShowLexicon({match}) {
-  const queryLexiconAlone = getLexiconAlone(match.params.id);
+  const queryLexiconAlone = getLexiconAlone(match.params.opusId);
 
   function WrapLink({item, children}) {
     return (

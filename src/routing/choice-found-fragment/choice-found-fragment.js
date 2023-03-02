@@ -12,7 +12,7 @@ import ChoiceBonus from '../choice-bonus/choice-bonus.js';
 function ChoiceFoundFragment({match}) {
   const {setFragmOpus, setFragmCount} = useContext(StoreContext);
   const queryInfoChapterWithWord = 
-    getInfoChapterWithWord(match.params.chapter_id, match.params.word);
+    getInfoChapterWithWord(match.params.chapterId, match.params.word);
 
   function InspectFragments({data}) {
     if (!data || !data.fragments || !data.fragments.length) {

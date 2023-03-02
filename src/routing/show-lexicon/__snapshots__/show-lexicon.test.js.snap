@@ -28,7 +28,7 @@ exports[`renders correct content 1`] = `
       match={
         Object {
           "params": Object {
-            "id": "lex",
+            "opusId": "lex",
           },
           "url": "/route/alone/lex",
         }

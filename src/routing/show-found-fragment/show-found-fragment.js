@@ -16,13 +16,13 @@ function ShowFoundFragment({match}) {
     <React.Fragment>
       <Link to={delLastElemFromURL(match.url, 2)}>
         <BriefPanel>
-          <SpanPolyglot>{match.params.fragment_id}</SpanPolyglot>
+          <SpanPolyglot>{match.params.fragmentId}</SpanPolyglot>
         </BriefPanel>
       </Link>
       <InfoChapterWord data={{
         opus: fragmOpus,
         word: match.params.word,
-        name: match.params.fragment_id,
+        name: match.params.fragmentId,
         count: fragmCount,
       }} />
       <ChoiceBonus match={match} />

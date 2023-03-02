@@ -17,7 +17,7 @@ function RouteChapter({match}) {
       <React.Fragment>
         <Link to={delLastElemFromURL(match.url, 3)}>
           <BriefPanel>
-            <SpanPolyglot>{match.params.fragment_id}</SpanPolyglot>
+            <SpanPolyglot>{match.params.fragmentId}</SpanPolyglot>
           </BriefPanel>
         </Link>
         <ShowChapterContent match={match} />
@@ -34,8 +34,8 @@ function RouteChapter({match}) {
       </Link>
       <Route exact path={match.path} component={ChoiceFoundFragment} />
       <Route exact path={`${match.path}/content`} component={ShowChapterContent} />
-      <Route exact path={`${match.path}/fragments/:fragment_id`} component={ShowFoundFragment} />
-      <Route exact path={`${match.path}/fragments/:fragment_id/content`} component={ShowFragmentContent} />
+      <Route exact path={`${match.path}/fragments/:fragmentId`} component={ShowFoundFragment} />
+      <Route exact path={`${match.path}/fragments/:fragmentId/content`} component={ShowFragmentContent} />
     </React.Fragment>
   );
 };

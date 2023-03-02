@@ -34,7 +34,7 @@ Lexicon.mockImplementation(({data, WrapLink}) => {
 });
 
 it('uses correct query', () => {
-  const rendered = shallow(<ShowLexicon match={{params: {id: 'lex'}}} />);
+  const rendered = shallow(<ShowLexicon match={{params: {opusId: 'lex'}}} />);
 
   // console.log(rendered.debug());
 
@@ -49,7 +49,7 @@ it('uses correct query', () => {
 it('renders correct content', () => {
   const rendered = mount(
     <BrowserRouter>
-      <ShowLexicon match={{params: {id: 'lex'}, url: '/route/alone/lex'}} />
+      <ShowLexicon match={{params: {opusId: 'lex'}, url: '/route/alone/lex'}} />
     </BrowserRouter>
   );
 

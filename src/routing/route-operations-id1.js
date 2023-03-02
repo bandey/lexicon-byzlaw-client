@@ -28,7 +28,7 @@ function RouteOperationsId1({match}) {
         <BriefPanel>{`1: ${opusName1}`}</BriefPanel>
       </Link>
       <Route exact path={match.path} component={ChoiceLexicon} />
-      <Route path={`${match.path}/:id2`} component={RouteOperationsId2} />
+      <Route path={`${match.path}/:opusId2`} component={RouteOperationsId2} />
     </React.Fragment>
   );
 };

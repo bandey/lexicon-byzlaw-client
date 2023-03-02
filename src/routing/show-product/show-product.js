@@ -10,8 +10,8 @@ import Lexicon from '../../components/lexicon/lexicon.js';
 function ShowProduct({match}) {
   const queryLexiconOperation = getLexiconOperation(
     match.params.operation,
-    match.params.id1,
-    match.params.id2,
+    match.params.opusId1,
+    match.params.opusId2,
   );
 
   function WrapLink({item, children}) {

@@ -13,7 +13,7 @@ function ShowChapterContent({match}) {
   const {t} = useTranslation();
   const {userEmail} = useContext(StoreContext);
   const queryChapterContent = 
-    getChapterContent(match.params.chapter_id, userEmail);
+    getChapterContent(match.params.chapterId, userEmail);
 
   function ChapterContentPanel({data}) {
     const blocks = markWordInText(match.params.word, data);

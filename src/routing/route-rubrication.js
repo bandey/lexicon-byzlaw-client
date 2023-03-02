@@ -7,15 +7,15 @@ import ChoiceRubric from './choice-rubric/choice-rubric.js';
 import RouteAloneOpus from './route-alone-opus.js';
 
 function RouteRubrication({match}) {
-  const rubricId = match.params.rubric_id || 0;
+  const rubricId = match.params.rubricId || 0;
 
   return (
     <React.Fragment>
       <ShowRubric rubricId={rubricId} linkTo={delLastElemFromURL(match.url)} />
       <Switch>
         <Route exact path={match.path} component={ChoiceRubric} />
-        <Route path={`${match.path}/opus/:id`} component={RouteAloneOpus} />
-        <Route path={`${match.path}/:rubric_id`} component={RouteRubrication} />
+        <Route path={`${match.path}/opus/:opusId`} component={RouteAloneOpus} />
+        <Route path={`${match.path}/:rubricId`} component={RouteRubrication} />
       </Switch>
     </React.Fragment>
   );

@@ -12,7 +12,7 @@ function ChoiceRubric({match}) {
   const {t, i18n} = useTranslation();
   const {setOpusName1} = useContext(StoreContext);
   const queryChildRubrics = 
-    getChildRubrics(match.params.rubric_id || 0, extractLang(i18n.language));
+    getChildRubrics(match.params.rubricId || 0, extractLang(i18n.language));
 
   function wrapLink(item, Child) {
     const opusId = item.opusId;
