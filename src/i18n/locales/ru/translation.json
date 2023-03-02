@@ -3,6 +3,7 @@
   "$Lexicons title": "Словники «Византийское право и акты»",
   "$Language": "русский",
   "$LangShort": "RU",
+  "$LangParam": "lang=ru",
   "Login": "Вход",
   "Cabinet": "Кабинет",
   "Exit": "Выход",
@@ -46,8 +47,8 @@
   "Choose view mode": "Выберите режим просмотра",
   "Chapter content": "Текст статьи",
   "Additions": "Дополнения",
-  "$ExpertSystem url": "https://expsys.byzlaw.ru/?lang=ru",
+  "$ExpertSystem url": "https://expsys.byzlaw.ru",
   "$ExpertSystem name": "Экспертная система «Византийское право и акты»",  
-  "$Thesaurus url": "https://thesaurus.byzlaw.ru/?lang=ru",
+  "$Thesaurus url": "https://thesaurus.byzlaw.ru",
   "$Thesaurus name": "Тезаурус «Византийское право и акты»"  
 }

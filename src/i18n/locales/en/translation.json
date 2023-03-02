@@ -3,6 +3,7 @@
   "$Lexicons title": "Lexicons «Byzantine Law and Acts»",
   "$Language": "english",
   "$LangShort": "EN",
+  "$LangParam": "lang=en",
   "Login": "Login",
   "Cabinet": "Cabinet",
   "Exit": "Exit",
@@ -46,8 +47,8 @@
   "Choose view mode": "Choose view mode",
   "Chapter content": "Chapter content",
   "Additions": "Additions",
-  "$ExpertSystem url": "https://expsys.byzlaw.ru/?lang=en",
+  "$ExpertSystem url": "https://expsys.byzlaw.ru",
   "$ExpertSystem name": "Expert system «Byzantine Law and Acts»",
-  "$Thesaurus url": "https://thesaurus.byzlaw.ru/?lang=en",
+  "$Thesaurus url": "https://thesaurus.byzlaw.ru",
   "$Thesaurus name": "Thesaurus «Byzantine Law and Acts»"
 }
