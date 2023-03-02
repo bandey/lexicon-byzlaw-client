@@ -10,6 +10,11 @@ function AdditionsBoard() {
   const additionsItems = [
     (
       <Option key={1}>
+        <a href={t('$ExpertSystem url')}>{t('$ExpertSystem name')}</a>
+      </Option>
+    ),
+    (
+      <Option key={2}>
         <a href={t('$Thesaurus url')}>{t('$Thesaurus name')}</a>
       </Option>
     ),

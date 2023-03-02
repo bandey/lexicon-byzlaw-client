@@ -46,6 +46,8 @@
   "Choose view mode": "Choose view mode",
   "Chapter content": "Chapter content",
   "Additions": "Additions",
+  "$ExpertSystem url": "https://expsys.byzlaw.ru/?lang=en",
+  "$ExpertSystem name": "Expert system «Byzantine Law and Acts»",
   "$Thesaurus url": "https://thesaurus.byzlaw.ru/?lang=en",
   "$Thesaurus name": "Thesaurus «Byzantine Law and Acts»"
 }

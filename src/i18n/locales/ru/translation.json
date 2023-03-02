@@ -46,6 +46,8 @@
   "Choose view mode": "Выберите режим просмотра",
   "Chapter content": "Текст статьи",
   "Additions": "Дополнения",
+  "$ExpertSystem url": "https://expsys.byzlaw.ru/?lang=ru",
+  "$ExpertSystem name": "Экспертная система «Византийское право и акты»",  
   "$Thesaurus url": "https://thesaurus.byzlaw.ru/?lang=ru",
   "$Thesaurus name": "Тезаурус «Византийское право и акты»"  
 }
