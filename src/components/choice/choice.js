@@ -1,1 +1,1 @@
-export {default} from './choice-w-font-promo.js';
+export {default} from './choice-view.js';

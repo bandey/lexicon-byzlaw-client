@@ -1,103 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correct content 1`] = `
-<ChoiceWithFontPromo
+<Choice
   title="Make your choice"
   wrapLink={[Function]}
 >
-  <Choice
-    title="Make your choice"
-    wrapLink={[Function]}
+  <Styled(CardWrapper)
+    border="primary"
   >
-    <Styled(CardWrapper)
+    <CardWrapper
       border="primary"
+      className="sc-AxjAm jbFUXm"
     >
-      <CardWrapper
+      <Card
+        body={false}
         border="primary"
         className="sc-AxjAm jbFUXm"
       >
-        <Card
-          body={false}
-          border="primary"
-          className="sc-AxjAm jbFUXm"
+        <div
+          className="sc-AxjAm jbFUXm card border-primary"
         >
-          <div
-            className="sc-AxjAm jbFUXm card border-primary"
+          <PanelHeader
+            bg="primary"
           >
-            <PanelHeader
-              bg="primary"
+            <CardHeader
+              className="bg-primary text-white undefined"
             >
-              <CardHeader
-                className="bg-primary text-white undefined"
+              <div
+                className="bg-primary text-white undefined card-header"
               >
-                <div
-                  className="bg-primary text-white undefined card-header"
+                Make your choice
+              </div>
+            </CardHeader>
+          </PanelHeader>
+          <a
+            href="/one"
+            key="one"
+          >
+            <styled.div>
+              <div
+                className="sc-AxirZ nKlfR"
+              >
+                <WrapItem
+                  index={0}
                 >
-                  Make your choice
-                </div>
-              </CardHeader>
-            </PanelHeader>
-            <a
-              href="/one"
-              key="one"
-            >
-              <styled.div>
-                <div
-                  className="sc-AxirZ nKlfR"
+                  Alpha
+                </WrapItem>
+              </div>
+            </styled.div>
+          </a>
+          <a
+            href="/two"
+            key="two"
+          >
+            <styled.div>
+              <div
+                className="sc-AxirZ nKlfR"
+              >
+                <WrapItem
+                  index={1}
                 >
-                  <WrapItem
-                    index={0}
-                  >
-                    Alpha
-                  </WrapItem>
-                </div>
-              </styled.div>
-            </a>
-            <a
-              href="/two"
-              key="two"
-            >
-              <styled.div>
-                <div
-                  className="sc-AxirZ nKlfR"
+                  Betta
+                </WrapItem>
+              </div>
+            </styled.div>
+          </a>
+          <a
+            href="/three"
+            key="three"
+          >
+            <styled.div>
+              <div
+                className="sc-AxirZ nKlfR"
+              >
+                <WrapItem
+                  index={2}
                 >
-                  <WrapItem
-                    index={1}
-                  >
-                    Betta
-                  </WrapItem>
-                </div>
-              </styled.div>
-            </a>
-            <a
-              href="/three"
-              key="three"
-            >
-              <styled.div>
-                <div
-                  className="sc-AxirZ nKlfR"
-                >
-                  <WrapItem
-                    index={2}
-                  >
-                    Gamma
-                  </WrapItem>
-                </div>
-              </styled.div>
-            </a>
-          </div>
-        </Card>
-      </CardWrapper>
-    </Styled(CardWrapper)>
-  </Choice>
-  <FontPromoter>
-    <styled.div>
-      <div
-        className="sc-AxiKw ktMMoL"
-      >
-         
-      </div>
-    </styled.div>
-  </FontPromoter>
-</ChoiceWithFontPromo>
+                  Gamma
+                </WrapItem>
+              </div>
+            </styled.div>
+          </a>
+        </div>
+      </Card>
+    </CardWrapper>
+  </Styled(CardWrapper)>
+</Choice>
 `;
