@@ -1,6 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`mark several words 1`] = `
+exports[`mark several intersected words 1`] = `
+Array [
+  <styled.span
+    key="1"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      first-
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ fqKCtQ"
+    >
+      axa
+    </span>
+  </styled.span>,
+  <styled.span
+    key="3"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      x
+    </span>
+  </styled.span>,
+  <styled.span
+    key="4"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ fqKCtQ"
+    >
+      axa
+    </span>
+  </styled.span>,
+  <styled.span
+    key="5"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      -last
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`mark several whole words 1`] = `
 Array [
   <styled.span
     key="1"
@@ -57,7 +114,54 @@ Array [
 ]
 `;
 
-exports[`mark word in first position 1`] = `
+exports[`mark several words 1`] = `
+Array [
+  <styled.span
+    key="1"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      first-
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ fqKCtQ"
+    >
+      middle
+    </span>
+  </styled.span>,
+  <styled.span
+    key="3"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ fqKCtQ"
+    >
+      middle
+    </span>
+  </styled.span>,
+  <styled.span
+    key="4"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      -last
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`mark whole word in first position 1`] = `
 Array [
   <styled.span
     key="1"
@@ -93,7 +197,7 @@ Array [
 ]
 `;
 
-exports[`mark word in last position 1`] = `
+exports[`mark whole word in last position 1`] = `
 Array [
   <styled.span
     key="1"
@@ -129,7 +233,7 @@ Array [
 ]
 `;
 
-exports[`mark word in middle position 1`] = `
+exports[`mark whole word in middle position 1`] = `
 Array [
   <styled.span
     key="1"
@@ -165,7 +269,147 @@ Array [
 ]
 `;
 
-exports[`no marking, if word is not found 1`] = `
+exports[`mark word in first position 1`] = `
+Array [
+  <styled.span
+    key="1"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ fqKCtQ"
+    >
+      first
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      -last
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`mark word in last position 1`] = `
+Array [
+  <styled.span
+    key="1"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      first-
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ fqKCtQ"
+    >
+      last
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`mark word in middle position 1`] = `
+Array [
+  <styled.span
+    key="1"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      first-
+    </span>
+  </styled.span>,
+  <styled.span
+    key="2"
+    marked={true}
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ fqKCtQ"
+    >
+      middle
+    </span>
+  </styled.span>,
+  <styled.span
+    key="3"
+    whiteSpace={true}
+  >
+    <span
+      className="sc-AxirZ llVYwu"
+    >
+      -last
+    </span>
+  </styled.span>,
+]
+`;
+
+exports[`no marking, if whole word has no leading space 1`] = `
+<styled.span
+  key="1"
+  whiteSpace={true}
+>
+  <span
+    className="sc-AxirZ llVYwu"
+  >
+     first-middle last 
+  </span>
+</styled.span>
+`;
+
+exports[`no marking, if whole word has no tailing space 1`] = `
+<styled.span
+  key="1"
+  whiteSpace={true}
+>
+  <span
+    className="sc-AxirZ llVYwu"
+  >
+     first middle-last 
+  </span>
+</styled.span>
+`;
+
+exports[`no marking, if whole word in first position has no leading space 1`] = `
+<styled.span
+  key="1"
+  whiteSpace={true}
+>
+  <span
+    className="sc-AxirZ llVYwu"
+  >
+    first last 
+  </span>
+</styled.span>
+`;
+
+exports[`no marking, if whole word in last position has no tailing space 1`] = `
+<styled.span
+  key="1"
+  whiteSpace={true}
+>
+  <span
+    className="sc-AxirZ llVYwu"
+  >
+     first last
+  </span>
+</styled.span>
+`;
+
+exports[`no marking, if whole word is not found 1`] = `
 <styled.span
   key="1"
   whiteSpace={true}
@@ -174,6 +418,19 @@ exports[`no marking, if word is not found 1`] = `
     className="sc-AxirZ llVYwu"
   >
      first last 
+  </span>
+</styled.span>
+`;
+
+exports[`no marking, if word is not found 1`] = `
+<styled.span
+  key="1"
+  whiteSpace={true}
+>
+  <span
+    className="sc-AxirZ llVYwu"
+  >
+    first-last
   </span>
 </styled.span>
 `;
