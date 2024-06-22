@@ -13,20 +13,24 @@ const Row = styled.div`
 `;
 
 const ColWord = styled.div`
-  width: 22%;
+  width: 20%;
   flex-grow: 1;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 const ColCount = styled.div`
-  width: 22%;
+  width: 20%;
   text-align: center;
 `;
 
 const ColChapter = styled.div`
-  width: 78%;
+  width: 80%;
   flex-grow: 1;
   text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export {Row, ColWord, ColCount, ColChapter};

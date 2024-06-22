@@ -58,7 +58,7 @@ exports[`renders correct content for 1 column found chapters 1`] = `
                     >
                       <styled.div>
                         <div
-                          className="sc-AxgMl ljswtE"
+                          className="sc-AxgMl iXfyDU"
                         >
                           Chapter
                         </div>
@@ -159,7 +159,7 @@ exports[`renders correct content for 1 column found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl ljswtE"
+                                className="sc-AxgMl iXfyDU"
                               >
                                 one.1
                               </div>
@@ -214,7 +214,7 @@ exports[`renders correct content for 1 column found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl ljswtE"
+                                className="sc-AxgMl iXfyDU"
                               >
                                 two.2
                               </div>
@@ -269,7 +269,7 @@ exports[`renders correct content for 1 column found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl ljswtE"
+                                className="sc-AxgMl iXfyDU"
                               >
                                 three.3
                               </div>
@@ -348,14 +348,14 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                     >
                       <styled.div>
                         <div
-                          className="sc-AxgMl ljswtE"
+                          className="sc-AxgMl iXfyDU"
                         >
                           Chapter
                         </div>
                       </styled.div>
                       <styled.div>
                         <div
-                          className="sc-AxhUy erRXhU"
+                          className="sc-AxhUy iVYHcW"
                         >
                           Qty
                         </div>
@@ -456,14 +456,14 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl ljswtE"
+                                className="sc-AxgMl iXfyDU"
                               >
                                 one.1
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 1
                               </div>
@@ -518,14 +518,14 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl ljswtE"
+                                className="sc-AxgMl iXfyDU"
                               >
                                 two.2
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 0
                               </div>
@@ -580,14 +580,14 @@ exports[`renders correct content for 2 columns found chapters 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxgMl ljswtE"
+                                className="sc-AxgMl iXfyDU"
                               >
                                 three.3
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 2
                               </div>
@@ -666,14 +666,14 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                     >
                       <styled.div>
                         <div
-                          className="sc-AxhCb hnNexo"
+                          className="sc-AxhCb cFAlqN"
                         >
                           Word
                         </div>
                       </styled.div>
                       <styled.div>
                         <div
-                          className="sc-AxhUy erRXhU"
+                          className="sc-AxhUy iVYHcW"
                         >
                           Qty
                         </div>
@@ -774,14 +774,14 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxhCb hnNexo"
+                                className="sc-AxhCb cFAlqN"
                               >
                                 one
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 1
                               </div>
@@ -836,14 +836,14 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxhCb hnNexo"
+                                className="sc-AxhCb cFAlqN"
                               >
                                 two
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 2
                               </div>
@@ -898,14 +898,14 @@ exports[`renders correct content for 2 columns lexicon 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxhCb hnNexo"
+                                className="sc-AxhCb cFAlqN"
                               >
                                 three
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 3
                               </div>
@@ -987,21 +987,21 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                     >
                       <styled.div>
                         <div
-                          className="sc-AxhCb hnNexo"
+                          className="sc-AxhCb cFAlqN"
                         >
                           Word
                         </div>
                       </styled.div>
                       <styled.div>
                         <div
-                          className="sc-AxhUy erRXhU"
+                          className="sc-AxhUy iVYHcW"
                         >
                           Qty1
                         </div>
                       </styled.div>
                       <styled.div>
                         <div
-                          className="sc-AxhUy erRXhU"
+                          className="sc-AxhUy iVYHcW"
                         >
                           Qty2
                         </div>
@@ -1103,21 +1103,21 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxhCb hnNexo"
+                                className="sc-AxhCb cFAlqN"
                               >
                                 one
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 1
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 0
                               </div>
@@ -1173,21 +1173,21 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxhCb hnNexo"
+                                className="sc-AxhCb cFAlqN"
                               >
                                 two
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 0
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 2
                               </div>
@@ -1243,21 +1243,21 @@ exports[`renders correct content for 3 columns lexicon 1`] = `
                           >
                             <styled.div>
                               <div
-                                className="sc-AxhCb hnNexo"
+                                className="sc-AxhCb cFAlqN"
                               >
                                 three
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 2
                               </div>
                             </styled.div>
                             <styled.div>
                               <div
-                                className="sc-AxhUy erRXhU"
+                                className="sc-AxhUy iVYHcW"
                               >
                                 1
                               </div>
@@ -1321,14 +1321,14 @@ exports[`renders correct content for empty data 1`] = `
                     >
                       <styled.div>
                         <div
-                          className="sc-AxhCb hnNexo"
+                          className="sc-AxhCb cFAlqN"
                         >
                           Word
                         </div>
                       </styled.div>
                       <styled.div>
                         <div
-                          className="sc-AxhUy erRXhU"
+                          className="sc-AxhUy iVYHcW"
                         >
                           Qty
                         </div>
@@ -1358,7 +1358,7 @@ exports[`renders correct content for empty data 1`] = `
               >
                 <styled.div>
                   <div
-                    className="sc-AxhCb hnNexo"
+                    className="sc-AxhCb cFAlqN"
                   >
                     $No data
                   </div>
