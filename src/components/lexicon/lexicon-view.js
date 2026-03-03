@@ -52,6 +52,13 @@ function Lexicon({data, WrapLink, mode, title}) {
       </Row>
     );
     lexiconRow = createLexiconRow(data, 'c', null, WrapLink);
+  } else if (mode === 'lexicon1') { // 1 column lexicon
+    headerRow = (
+      <Row noHover>
+        <ColWord>{title || t('Word')}</ColWord>
+      </Row>
+    );
+    lexiconRow = createLexiconRow(data, null, null, WrapLink);
   } else { // unknown
     return null;
   }

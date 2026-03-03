@@ -11,13 +11,14 @@ function createLexiconRow(data, c1, c2, WrapLink) {
       return null;
     };
 
+    const colCount1 = c1 ? (<ColCount>{row[c1]}</ColCount>) : null;
     const colCount2 = c2 ? (<ColCount>{row[c2]}</ColCount>) : null;
 
     return (
       <WrapLink item={row}>
         <Row style={style}>
           <ColWord>{row.w}</ColWord>
-          <ColCount>{row[c1]}</ColCount>
+          {colCount1}
           {colCount2}
         </Row>
       </WrapLink>
