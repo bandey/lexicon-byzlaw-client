@@ -23,6 +23,7 @@ function ChoiceMode() {
           {id: 'integral', name: t('Integral lexicon')},
           {id: 'alone', name: t('Ad fontes')},
           {id: 'operations', name: t('Operations')},
+          {id: 'brt', name: t('Receptions and transliterations')},
         ]}
       </Choice>
       <AdditionsBoard />
