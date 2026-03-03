@@ -92,6 +92,20 @@ function getChapterContent(chapterId, userEmail) {
   }; 
 };
 
+function getBrtWords() {
+  return {
+    name: 'lexiconBrt',
+    gql: 'lexiconBrt',
+  };
+};
+
+function getBrtChaptersForWord(word) {
+  return {
+    name: 'getBrtChaptersForWord',
+    gql: `getBrtChaptersForWord(word: "${word}") {id opus name}`,
+  };
+};
+
 export {
   getOpusAll,
   getChildRubrics,
@@ -105,4 +119,6 @@ export {
   getChaptersWithWord,
   getInfoChapterWithWord,
   getChapterContent,
+  getBrtWords,
+  getBrtChaptersForWord,
 };
