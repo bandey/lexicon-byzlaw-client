@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Row = styled.div`
   display: flex;
-  padding-left: 1.25rem;
+  padding-left: .25rem;
   justify-content: space-between;
   align-items: center;
   white-space: nowrap;
@@ -15,6 +15,7 @@ const Row = styled.div`
 const ColWord = styled.div`
   width: 20%;
   flex-grow: 1;
+  padding-left: 1rem;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -28,6 +29,7 @@ const ColCount = styled.div`
 const ColChapter = styled.div`
   width: 80%;
   flex-grow: 1;
+  padding-left: 1rem;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
