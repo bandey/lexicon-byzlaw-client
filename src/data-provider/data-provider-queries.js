@@ -95,7 +95,7 @@ function getChapterContent(chapterId, userEmail) {
 function getBrtWords() {
   return {
     name: 'lexiconBrt',
-    gql: 'lexiconBrt',
+    gql: 'lexiconBrt { w c }',
   };
 };
 
