@@ -9,13 +9,11 @@ import RouteIntegralLingua from './route-integral-lingua.js';
 
 function RouteIntegral({match}) {
   const {t} = useTranslation();
-  const {setLinguaId} = useContext(StoreContext);
 
   function ChoiceLinguaWrapper(props) {
     return (
       <ChoiceLingua
         title={t('Choose language')}
-        onChoose={(item) => setLinguaId(item.id)}
         {...props}
       />
     );

@@ -10,7 +10,7 @@ import RouteWord from './route-word.js';
 
 function RouteIntegralLingua({match}) {
   const {t} = useTranslation();
-  const {linguaId} = useContext(StoreContext);
+  const linguaId = match.params.lingua;
 
   return (
     <React.Fragment>
